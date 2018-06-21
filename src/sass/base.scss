@@ -1,0 +1,247 @@
+p {
+    font-size: 0.875em;
+}
+
+
+.campaign-public-layout {
+    background-color: #4d2b1b;
+}
+.campaign-public-layout #content {
+    max-width: 100%;
+}
+.campaign-public-layout .main-content {
+    color: #333333;
+}
+.campaign-public-layout .page-background {
+    max-height: 500px;
+    background-position: center 30%;
+}
+@media screen and (max-width: 769px) {
+    .campaign-public-layout {
+        background-color: #f7f7f7;
+    }
+}
+
+.collapsable-nav-row {
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+
+.collapsable-nav-row .front-nav-container {
+    background: -moz-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
+    background: -webkit-linear-gradient(23deg, #4d2719 0%, #e6f841 100%);
+    background: -o-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
+    background: -ms-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
+    background: linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
+    filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#4f532d', endColorstr='#4d2719',GradientType=0 )";
+    padding-top: 0.9375em;
+}
+.campaign-public-layout #campaign-nav {
+    background: none;
+}
+.campaign-public-layout #campaign-nav .icon {
+    background: none;
+}
+.campaign-public-layout #campaign-nav li {
+    opacity: 0.6;
+    font-weight: normal;
+}
+.campaign-public-layout #campaign-nav .nav-links li:hover {
+    background: none;
+    opacity: 1;
+}
+.campaign-public-layout #campaign-nav li.active {
+    opacity: 1;
+}
+.campaign-public-layout #campaign-nav .nav-links li.active:hover {
+    background-color: #f6ac07;
+    opacity: 1;
+}
+
+
+.campaign-public-layout #campaign-footer .inline-list > li {
+    margin-left: 0.7em !important;
+}
+
+
+.campaign-public-layout #sidebar {
+    color: #333333;
+}
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated {
+    width: 100%;
+    background-color: #FFF;
+    border: none;
+    padding: 0.625em;
+    margin-bottom: 0.9375em;
+}
+.sidebar-party-members .game-master,
+.fan-count-wrapper, 
+.comment-count-wrapper {
+    background: none;
+    border: none;
+    max-width: none;
+}
+
+
+.sidebar-last-updated {
+    width: 100% !important;
+}
+.sidebar-see-all-wiki-pages {
+    padding: 0px !important;
+}
+
+
+.sidebar-party-members .game-master .small-3 {
+    max-width: 50px;
+}
+.sidebar-party-members .player-characters .player {
+    clear: none;
+    max-width: 70px;
+    max-height: 60px;
+    padding-bottom: 0.625em;
+}
+.sidebar-last-updated .updated-by-container .when .time {
+    padding-top: 0px;
+}
+.recent-updates .recent-update .avatar {
+    max-width: 80px;
+}
+
+
+@media screen and (min-width: 1140px) {
+    .collapsable-nav-row {
+        display: flex;
+    }
+    .collapsable-nav-row .front-nav-container {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+    }
+    .collapsable-nav-row .front-nav-container #campaign-nav {
+        width: 130px;
+    }
+    .collapsable-nav-row .main-content-container {
+        width: 100%;
+        padding-top: 0.9375em;
+    }
+    .campaign-public-layout #sidebar {
+        min-width: 250px;
+        padding-top: 0.9375em;
+        padding-left: 0em;
+        margin-top: 0em;
+    }
+}
+
+
+@media screen and (max-width: 1139px) and (min-width: 941px) {
+    .collapsable-nav-row .front-nav-container {
+        position: absolute;
+        height: 100%;
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+    }
+    .collapsable-nav-row .front-nav-container #campaign-nav {
+        width: 130px;
+    }
+    .collapsable-nav-row .main-content-container,
+    .campaign-public-layout #sidebar {
+        float: none;
+        width: auto;
+        padding-top: 0.9375em;
+        margin-left: 160px;
+    }
+    .campaign-public-layout #campaign-footer {
+        margin-bottom: 0px;
+    }
+
+    .campaign-public-layout #sidebar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .campaign-public-layout #sidebar .sidebar-party-members {
+        width: 49%;
+        margin-right: 1%;
+    }
+    .campaign-public-layout #sidebar #campaign-quick-stats {
+        width: 49%;
+        margin-left: 1%;
+    }
+}
+
+
+@media screen and (max-width: 940px) {
+    .collapsable-nav-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .collapsable-nav-row .front-nav-container {
+        display: none !important;
+    }
+    .collapsable-nav-row .main-content-container,
+    .campaign-public-layout #sidebar {
+        float: none;
+        width: 100%;
+        padding-top: 0.9375em;
+    }
+    .campaign-public-layout #campaign-footer {
+        margin-bottom: 0px;
+    }
+
+    .campaign-public-layout #sidebar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .campaign-public-layout #sidebar .sidebar-party-members {
+        width: 49%;
+        margin-right: 1%;
+    }
+    .campaign-public-layout #sidebar #campaign-quick-stats {
+        width: 49%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .campaign-public-layout #sidebar {
+        display: block;
+    }
+    .campaign-public-layout #sidebar .sidebar-party-members,
+    .campaign-public-layout #sidebar #campaign-quick-stats {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+.section-header.stream .section-header-icon,
+.section-header.stream .name,
+.op-icon-gm {
+    color: #767676;
+}
+
+
+.preview-contnet h1,
+.preview-content h2,
+.preview-content h3 {
+    color: #767676;
+}
+
+
+.wiki-page div[itemprop="text"] h2 {
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 0.375em;
+}
+
+
+body.campaign-public-layout .title ~ div[itemprop="text"] {
+    margin-top: .5em;
+}
+
+
+.social-share-button { 
+    display: none;
+}
