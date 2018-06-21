@@ -1,0 +1,19 @@
+{
+  "name": "obsidianportal-theme",
+  "version": "1.0.0",
+  "description": "CSS styling for Obsidian Portal campaigns, to bring the campaign's frontpage and wiki more in line with other pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orjanbp/obsidianportal-theme.git"
+  },
+  "author": "orjanbp@github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orjanbp/obsidianportal-theme/issues"
+  },
+  "homepage": "https://github.com/orjanbp/obsidianportal-theme#readme"
+}
