@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/orjanbp/obsidianportal-theme/issues"
   },
-  "homepage": "https://github.com/orjanbp/obsidianportal-theme#readme"
+  "homepage": "https://github.com/orjanbp/obsidianportal-theme#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "sass": "^1.6.2"
+  }
 }
