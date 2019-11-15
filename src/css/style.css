@@ -1,20 +1,18 @@
-/**
- Root styles for variables.
-*/
 :root {
-  --main-bg-color: #212529;
-  --bg-color-light: #343a40;
-  --gradient-color-dark: #212529;
-  --gradient-color-light: #343a40;
-  --bottom-line-color: #495057;
+  --main-bg-color: #161617;
+  --bg-color-light: #1F2022;
+  --gradient-color-dark: #161617;
+  --gradient-color-light: #1F2022;
+  --bottom-line-color: #323638;
   --text-color: #dee2e6;
   --text-color-big: #fff;
   --soft-text-color: #868e96;
 }
 
-/**
- Font styling.
-*/
+p {
+  font-size: 0.875em;
+}
+
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3,
@@ -30,24 +28,48 @@
   color: var(--text-color-big);
 }
 
-p {
-  font-size: 0.875em;
+.campaign-public-layout #sidebar,
+label {
+  color: var(--text-color);
 }
 
-/**
- Fix various softer text colours and styles.
-*/
-
+.preview-contnet h1,
+.preview-content h2,
+.preview-content h3,
 .section-header.stream .section-header-icon,
 .section-header.stream .name,
 .op-icon-gm {
   color: var(--soft-text-color);
 }
 
-.preview-contnet h1,
-.preview-content h2,
-.preview-content h3 {
-  color: var(--soft-text-color);
+.campaign-landing-show .campaign-landing-page-container,
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated,
+.campaign-public-layout.wiki-pages-edit section.main-section,
+.campaign-public-layout.posts-edit section.main-section,
+.campaign-public-layout.characters-edit section.main-section,
+.campaign-public-layout.items-edit section.main-section,
+.event-edit section.main-section,
+.campaign-maps-new section.main-section,
+body.campaign-public-layout .post-section.post-main,
+body.campaign-public-layout .post-section.post-gm-only,
+.campaign-public-layout.wiki-pages-edit .secret-sections > section,
+.campaign-public-layout.posts-edit .secret-sections > section,
+.campaign-public-layout.characters-edit .secret-sections > section,
+.campaign-public-layout.items-edit .secret-sections > section,
+.event-edit .secret-sections > section,
+.campaign-maps-new .secret-sections > section {
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+}
+
+h1.title-edit,
+h2.title-edit,
+h3.title-edit,
+h4.title-edit,
+h5.title-edit,
+h6.title-edit {
+  border-bottom-color: var(--bottom-line-color);
 }
 
 .wiki-page div[itemprop="text"] h2 {
@@ -63,9 +85,6 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   display: none;
 }
 
-/**
- Rework body layout and apply body colours.
-*/
 .campaign-public-layout {
   background-color: var(--gradient-color-dark);
 }
@@ -83,22 +102,10 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   background-position: center 30%;
 }
 
-@media screen and (max-width: 769px) {
-  .campaign-public-layout {
-    background-color: var(--main-bg-color);
-  }
-}
-
-/**
- Narrower highlight colour bar.
-*/
 .campaign-public-layout .highlight-container {
   height: 3px;
 }
 
-/**
- Adjust and recolour left-side nav.
-*/
 .collapsable-nav-row {
   position: relative;
   background-color: var(--main-bg-color);
@@ -133,6 +140,18 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   padding-top: 0.9375em;
 }
 
+.markItUpHeader > ul {
+  display: inline-block;
+  height: 20px;
+  width: auto;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.campaign-textarea-container .embed-buttons .button:nth-of-type(1) {
+  margin-top: 27px;
+}
+
 .campaign-public-layout #campaign-nav {
   background: none;
 }
@@ -154,45 +173,15 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   margin-left: 0.7em !important;
 }
 
-.campaign-public-layout #sidebar {
-  color: var(--text-color);
-}
-
-/**
- Change background color and style for block elements
- (wiki page content, sidebar modules, etc.)
-*/
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-public-layout #sidebar .module,
 .sidebar-last-updated {
   width: 100%;
-  background-color: var(--bg-color-light);
-  color: var(--text-color);
   border: none;
   padding: 0.625em;
   margin-bottom: 0.9375em;
 }
 
-/**
- Apply border radius to different floating elements.
-*/
-.campaign-landing-show .campaign-landing-page-container {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-.campaign-public-layout #sidebar .module,
-.sidebar-last-updated {
-  border-radius: 2px;
-}
-
-.button {
-  border-radius: 2px;
-}
-
-/**
- Rework right sidebar element styles.
-*/
 .sidebar-party-members .game-master,
 .fan-count-wrapper,
 .comment-count-wrapper {
@@ -228,9 +217,6 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   max-width: 80px;
 }
 
-/**
- Handle element positions for large screens.
-*/
 @media screen and (min-width: 1140px) {
   .collapsable-nav-row {
     display: flex;
@@ -255,10 +241,6 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   }
 }
 
-/**
- Root styles for medium screens, by collapsing the right-hand
- sidebar to the bottom of the page.
-*/
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .collapsable-nav-row .front-nav-container {
     position: absolute;
@@ -294,10 +276,6 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   }
 }
 
-/**
- Compensate for left-hand sidebar disappearing at this
- screen size.
-*/
 @media screen and (max-width: 940px) {
   .collapsable-nav-row {
     display: flex;
@@ -326,6 +304,12 @@ body.campaign-public-layout .title ~ div[itemprop="text"] {
   .campaign-public-layout #sidebar #campaign-quick-stats {
     width: 49%;
     margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .campaign-public-layout {
+    background-color: var(--main-bg-color);
   }
 }
 
