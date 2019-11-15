@@ -1,3 +1,6 @@
+/**
+ Root styles for variables.
+*/
 :root {
   --main-bg-color: #212529;
   --bg-color-light: #343a40;
@@ -9,6 +12,9 @@
   --soft-text-color: #868e96;
 }
 
+/**
+ Font styling.
+*/
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3,
@@ -28,6 +34,38 @@ p {
   font-size: 0.875em;
 }
 
+/**
+ Fix various softer text colours and styles.
+*/
+
+.section-header.stream .section-header-icon,
+.section-header.stream .name,
+.op-icon-gm {
+  color: var(--soft-text-color);
+}
+
+.preview-contnet h1,
+.preview-content h2,
+.preview-content h3 {
+  color: var(--soft-text-color);
+}
+
+.wiki-page div[itemprop="text"] h2 {
+  border-bottom: 1px solid var(--bottom-line-color);
+  margin-bottom: 0.375em;
+}
+
+body.campaign-public-layout .title ~ div[itemprop="text"] {
+  margin-top: 0.5em;
+}
+
+.social-share-button {
+  display: none;
+}
+
+/**
+ Rework body layout and apply body colours.
+*/
 .campaign-public-layout {
   background-color: var(--gradient-color-dark);
 }
@@ -51,10 +89,16 @@ p {
   }
 }
 
+/**
+ Narrower highlight colour bar.
+*/
 .campaign-public-layout .highlight-container {
-    height: 3px;
+  height: 3px;
 }
 
+/**
+ Adjust and recolour left-side nav.
+*/
 .collapsable-nav-row {
   position: relative;
   background-color: var(--main-bg-color);
@@ -114,6 +158,10 @@ p {
   color: var(--text-color);
 }
 
+/**
+ Change background color and style for block elements
+ (wiki page content, sidebar modules, etc.)
+*/
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-public-layout #sidebar .module,
 .sidebar-last-updated {
@@ -125,6 +173,26 @@ p {
   margin-bottom: 0.9375em;
 }
 
+/**
+ Apply border radius to different floating elements.
+*/
+.campaign-landing-show .campaign-landing-page-container {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated {
+  border-radius: 2px;
+}
+
+.button {
+  border-radius: 2px;
+}
+
+/**
+ Rework right sidebar element styles.
+*/
 .sidebar-party-members .game-master,
 .fan-count-wrapper,
 .comment-count-wrapper {
@@ -160,6 +228,9 @@ p {
   max-width: 80px;
 }
 
+/**
+ Handle element positions for large screens.
+*/
 @media screen and (min-width: 1140px) {
   .collapsable-nav-row {
     display: flex;
@@ -184,6 +255,10 @@ p {
   }
 }
 
+/**
+ Root styles for medium screens, by collapsing the right-hand
+ sidebar to the bottom of the page.
+*/
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .collapsable-nav-row .front-nav-container {
     position: absolute;
@@ -219,6 +294,10 @@ p {
   }
 }
 
+/**
+ Compensate for left-hand sidebar disappearing at this
+ screen size.
+*/
 @media screen and (max-width: 940px) {
   .collapsable-nav-row {
     display: flex;
@@ -260,29 +339,4 @@ p {
     margin-left: 0px;
     margin-right: 0px;
   }
-}
-
-.section-header.stream .section-header-icon,
-.section-header.stream .name,
-.op-icon-gm {
-  color: var(--soft-text-color);
-}
-
-.preview-contnet h1,
-.preview-content h2,
-.preview-content h3 {
-  color: var(--soft-text-color);
-}
-
-.wiki-page div[itemprop="text"] h2 {
-  border-bottom: 1px solid var(--bottom-line-color);
-  margin-bottom: 0.375em;
-}
-
-body.campaign-public-layout .title ~ div[itemprop="text"] {
-  margin-top: 0.5em;
-}
-
-.social-share-button {
-  display: none;
 }
