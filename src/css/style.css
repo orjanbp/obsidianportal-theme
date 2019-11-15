@@ -1,116 +1,188 @@
+:root {
+  --main-bg-color: #212529;
+  --bg-color-light: #343a40;
+  --gradient-color-dark: #212529;
+  --gradient-color-light: #343a40;
+  --bottom-line-color: #495057;
+  --text-color: #dee2e6;
+  --text-color-big: #fff;
+  --soft-text-color: #868e96;
+}
+
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h4,
+.campaign-public-layout .main-content h5,
+.campaign-public-layout .main-content h6,
+.campaign-public-layout .preview-content h1,
+.campaign-public-layout .preview-content h2,
+.campaign-public-layout .preview-content h3,
+.campaign-public-layout .preview-content h4,
+.campaign-public-layout .preview-content h5,
+.campaign-public-layout .preview-content h6 {
+  color: var(--text-color-big);
+}
+
 p {
-  font-size: 0.875em; }
+  font-size: 0.875em;
+}
 
 .campaign-public-layout {
-  background-color: #4d2b1b; }
+  background-color: var(--gradient-color-dark);
+}
 
 .campaign-public-layout #content {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .campaign-public-layout .main-content {
-  color: #333333; }
+  color: var(--text-color);
+}
 
 .campaign-public-layout .page-background {
   max-height: 500px;
-  background-position: center 30%; }
+  background-position: center 30%;
+}
 
 @media screen and (max-width: 769px) {
   .campaign-public-layout {
-    background-color: #f7f7f7; } }
+    background-color: var(--main-bg-color);
+  }
+}
+
+.campaign-public-layout .highlight-container {
+    height: 3px;
+}
 
 .collapsable-nav-row {
   position: relative;
-  background-color: #f7f7f7; }
+  background-color: var(--main-bg-color);
+}
 
 .collapsable-nav-row .front-nav-container {
-  background: -moz-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
-  background: -webkit-linear-gradient(23deg, #4d2719 0%, #e6f841 100%);
-  background: -o-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
-  background: -ms-linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
-  background: linear-gradient(23deg, #4d2719 0%, #4f532d 100%);
-  filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr='#4f532d', endColorstr='#4d2719',GradientType=0 )";
-  padding-top: 0.9375em; }
+  background: -moz-linear-gradient(
+    0deg,
+    var(--gradient-color-dark) 0%,
+    var(--gradient-color-light) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--gradient-color-dark) 0%,
+    var(--gradient-color-light) 100%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    var(--gradient-color-dark) 0%,
+    var(--gradient-color-light) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    var(--gradient-color-dark) 0%,
+    var(--gradient-color-light) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    var(--gradient-color-dark) 0%,
+    var(--gradient-color-light) 100%
+  );
+  padding-top: 0.9375em;
+}
 
 .campaign-public-layout #campaign-nav {
-  background: none; }
+  background: none;
+}
 
 .campaign-public-layout #campaign-nav .icon {
-  background: none; }
+  background: none;
+}
 
 .campaign-public-layout #campaign-nav li {
   opacity: 0.6;
-  font-weight: normal; }
-
-.campaign-public-layout #campaign-nav .nav-links li:hover {
-  background: none;
-  opacity: 1; }
+  font-weight: normal;
+}
 
 .campaign-public-layout #campaign-nav li.active {
-  opacity: 1; }
-
-.campaign-public-layout #campaign-nav .nav-links li.active:hover {
-  background-color: #f6ac07;
-  opacity: 1; }
+  opacity: 1;
+}
 
 .campaign-public-layout #campaign-footer .inline-list > li {
-  margin-left: 0.7em !important; }
+  margin-left: 0.7em !important;
+}
 
 .campaign-public-layout #sidebar {
-  color: #333333; }
+  color: var(--text-color);
+}
 
+.campaign-landing-show .campaign-landing-page-container,
 .campaign-public-layout #sidebar .module,
 .sidebar-last-updated {
   width: 100%;
-  background-color: #FFF;
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
   border: none;
   padding: 0.625em;
-  margin-bottom: 0.9375em; }
+  margin-bottom: 0.9375em;
+}
 
 .sidebar-party-members .game-master,
 .fan-count-wrapper,
 .comment-count-wrapper {
   background: none;
   border: none;
-  max-width: none; }
+  max-width: none;
+}
 
 .sidebar-last-updated {
-  width: 100% !important; }
+  width: 100% !important;
+}
 
 .sidebar-see-all-wiki-pages {
-  padding: 0px !important; }
+  padding: 0px !important;
+}
 
 .sidebar-party-members .game-master .small-3 {
-  max-width: 50px; }
+  max-width: 50px;
+}
 
 .sidebar-party-members .player-characters .player {
   clear: none;
   max-width: 70px;
   max-height: 60px;
-  padding-bottom: 0.625em; }
+  padding-bottom: 0.625em;
+}
 
 .sidebar-last-updated .updated-by-container .when .time {
-  padding-top: 0px; }
+  padding-top: 0px;
+}
 
 .recent-updates .recent-update .avatar {
-  max-width: 80px; }
+  max-width: 80px;
+}
 
 @media screen and (min-width: 1140px) {
   .collapsable-nav-row {
-    display: flex; }
+    display: flex;
+  }
   .collapsable-nav-row .front-nav-container {
     width: 160px;
     min-width: 160px;
-    max-width: 160px; }
+    max-width: 160px;
+  }
   .collapsable-nav-row .front-nav-container #campaign-nav {
-    width: 130px; }
+    width: 130px;
+  }
   .collapsable-nav-row .main-content-container {
     width: 100%;
-    padding-top: 0.9375em; }
+    padding-top: 0.9375em;
+  }
   .campaign-public-layout #sidebar {
     min-width: 250px;
     padding-top: 0.9375em;
     padding-left: 0em;
-    margin-top: 0em; } }
+    margin-top: 0em;
+  }
+}
 
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .collapsable-nav-row .front-nav-container {
@@ -118,75 +190,99 @@ p {
     height: 100%;
     width: 160px;
     min-width: 160px;
-    max-width: 160px; }
+    max-width: 160px;
+  }
   .collapsable-nav-row .front-nav-container #campaign-nav {
-    width: 130px; }
+    width: 130px;
+  }
   .collapsable-nav-row .main-content-container,
   .campaign-public-layout #sidebar {
     float: none;
     width: auto;
     padding-top: 0.9375em;
-    margin-left: 160px; }
+    margin-left: 160px;
+  }
   .campaign-public-layout #campaign-footer {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+  }
   .campaign-public-layout #sidebar {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .campaign-public-layout #sidebar .sidebar-party-members {
     width: 49%;
-    margin-right: 1%; }
+    margin-right: 1%;
+  }
   .campaign-public-layout #sidebar #campaign-quick-stats {
     width: 49%;
-    margin-left: 1%; } }
+    margin-left: 1%;
+  }
+}
 
 @media screen and (max-width: 940px) {
   .collapsable-nav-row {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
   .collapsable-nav-row .front-nav-container {
-    display: none !important; }
+    display: none !important;
+  }
   .collapsable-nav-row .main-content-container,
   .campaign-public-layout #sidebar {
     float: none;
     width: 100%;
-    padding-top: 0.9375em; }
+    padding-top: 0.9375em;
+  }
   .campaign-public-layout #campaign-footer {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+  }
   .campaign-public-layout #sidebar {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   .campaign-public-layout #sidebar .sidebar-party-members {
     width: 49%;
-    margin-right: 1%; }
+    margin-right: 1%;
+  }
   .campaign-public-layout #sidebar #campaign-quick-stats {
     width: 49%;
-    margin-left: 1%; } }
+    margin-left: 1%;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .campaign-public-layout #sidebar {
-    display: block; }
+    display: block;
+  }
   .campaign-public-layout #sidebar .sidebar-party-members,
   .campaign-public-layout #sidebar #campaign-quick-stats {
     width: 100%;
     margin-left: 0px;
-    margin-right: 0px; } }
+    margin-right: 0px;
+  }
+}
 
 .section-header.stream .section-header-icon,
 .section-header.stream .name,
 .op-icon-gm {
-  color: #767676; }
+  color: var(--soft-text-color);
+}
 
 .preview-contnet h1,
 .preview-content h2,
 .preview-content h3 {
-  color: #767676; }
+  color: var(--soft-text-color);
+}
 
 .wiki-page div[itemprop="text"] h2 {
-  border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 0.375em; }
+  border-bottom: 1px solid var(--bottom-line-color);
+  margin-bottom: 0.375em;
+}
 
 body.campaign-public-layout .title ~ div[itemprop="text"] {
-  margin-top: .5em; }
+  margin-top: 0.5em;
+}
 
 .social-share-button {
-  display: none; }
+  display: none;
+}
