@@ -18,13 +18,7 @@ p {
 .campaign-public-layout .main-content h3,
 .campaign-public-layout .main-content h4,
 .campaign-public-layout .main-content h5,
-.campaign-public-layout .main-content h6,
-.campaign-public-layout .preview-content h1,
-.campaign-public-layout .preview-content h2,
-.campaign-public-layout .preview-content h3,
-.campaign-public-layout .preview-content h4,
-.campaign-public-layout .preview-content h5,
-.campaign-public-layout .preview-content h6 {
+.campaign-public-layout .main-content h6 {
   color: var(--text-color-big);
 }
 
