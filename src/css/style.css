@@ -1,8 +1,8 @@
 :root {
   --main-bg-color: #161617;
-  --bg-color-light: #1F2022;
+  --bg-color-light: #1f2022;
   --gradient-color-dark: #161617;
-  --gradient-color-light: #1F2022;
+  --gradient-color-light: #1f2022;
   --bottom-line-color: #323638;
   --text-color: #dee2e6;
   --text-color-big: #fff;
@@ -18,12 +18,13 @@ p {
 .campaign-public-layout .main-content h3,
 .campaign-public-layout .main-content h4,
 .campaign-public-layout .main-content h5,
-.campaign-public-layout .main-content h6 {
+.campaign-public-layout .main-content h6,
+.character-index.campaign-public-layout .character-quick-search h4,
+.item-index.campaign-public-layout .character-quick-search h4 {
   color: var(--text-color-big);
 }
 
-.campaign-public-layout #sidebar,
-label {
+.campaign-public-layout #sidebar {
   color: var(--text-color);
 }
 
@@ -32,7 +33,12 @@ label {
 .preview-content h3,
 .section-header.stream .section-header-icon,
 .section-header.stream .name,
-.op-icon-gm {
+.op-icon-gm,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
   color: var(--soft-text-color);
 }
 
@@ -40,6 +46,7 @@ label {
 .campaign-public-layout #sidebar .module,
 .sidebar-last-updated,
 .campaign-public-layout.wiki-pages-edit section.main-section,
+.campaign-public-layout.wiki-pages-edit section.main-section label,
 .campaign-public-layout.posts-edit section.main-section,
 .campaign-public-layout.characters-edit section.main-section,
 .campaign-public-layout.items-edit section.main-section,
@@ -52,9 +59,21 @@ body.campaign-public-layout .post-section.post-gm-only,
 .campaign-public-layout.characters-edit .secret-sections > section,
 .campaign-public-layout.items-edit .secret-sections > section,
 .event-edit .secret-sections > section,
-.campaign-maps-new .secret-sections > section {
+.campaign-maps-new .secret-sections > section,
+.character-index.campaign-public-layout .character-quick-search,
+.item-index.campaign-public-layout .character-quick-search,
+.character-show .main-content section,
+.item-show .main-content section,
+.character-index.campaign-public-layout .character-list-item,
+.item-index.campaign-public-layout .character-list-item,
+.character-index.campaign-public-layout .filter-options,
+.item-index.campaign-public-layout .filter-options {
   background-color: var(--bg-color-light);
   color: var(--text-color);
+}
+
+ul.as-selections li.as-selection-item {
+  color: #333;
 }
 
 h1.title-edit,
