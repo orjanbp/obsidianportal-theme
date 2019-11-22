@@ -16,10 +16,11 @@ p {
 .character-index.campaign-public-layout .character-quick-search h4,
 .item-index.campaign-public-layout .character-quick-search h4 {
   color: var(--text-color-big);
+  border-bottom: none;
 }
 
 .campaign-public-layout #sidebar {
-  color: var(--text-color);
+  color: var(--text-color-body);
 }
 
 .preview-contnet h1,
@@ -33,7 +34,7 @@ input[type='email']::placeholder,
 input[type='password']::placeholder,
 input[type='tel']::placeholder,
 textarea::placeholder {
-  color: var(--soft-text-color);
+  color: var(--text-color-soft);
 }
 
 .campaign-landing-show .campaign-landing-page-container,
@@ -64,29 +65,29 @@ body.campaign-public-layout .post-section.post-main,
 .item-show .main-content section,
 .sidebar-last-updated {
   background-color: var(--content-bg-light);
-  color: var(--text-color);
+  color: var(--text-color-body);
 }
 
 ul.as-selections li.as-selection-item {
   color: #333;
 }
 
-h1.title-edit,
-h2.title-edit,
-h3.title-edit,
-h4.title-edit,
-h5.title-edit,
-h6.title-edit {
-  border-bottom-color: var(--bottom-line-color);
+.campaign-public-layout .main-content h2,
+.wiki-page div[itemprop='text'] h2,
+.gm-only-header.title,
+.post-gm-only .title {
+  border-bottom: 1px solid var(--bottom-line-color);
+  margin-top: 32px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
-.wiki-page div[itemprop='text'] h2 {
-  border-bottom: 1px solid var(--bottom-line-color);
-  margin-bottom: 0.375em;
+.campaign-public-layout .main-content h2.wiki-page-name {
+  margin-top: 0px;
 }
 
 body.campaign-public-layout .title ~ div[itemprop='text'] {
-  margin-top: 0.5em;
+  margin-top: 24px;
 }
 
 .social-share-button {

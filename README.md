@@ -33,10 +33,10 @@ At the top of each `style-[name].css` file located under `themes`, there is a li
   --content-bg-dark: #161617;
   --content-bg-light: #1f2022;
 
-  --bottom-line-color: #323638;
-  --text-color: #dee2e6;
   --text-color-big: #fff;
-  --soft-text-color: #868e96;
+  --text-color-body: #dee2e6;
+  --text-color-soft: #868e96;
+  --bottom-line-color: #323638;
 
   --sidebar-gradient-top: #1f2022;
   --sidebar-gradient-bottom: #161617;

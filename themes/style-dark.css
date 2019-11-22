@@ -6,11 +6,11 @@
   --title-font-size: 2.5rem;
   --content-bg-dark: #161617;
   --content-bg-light: #1f2022;
-  --bottom-line-color: #323638;
-  --text-color: #dee2e6;
   --text-color-big: #fff;
-  --soft-text-color: #868e96;
-  --sidebar-gradient-top: #1f2022;
+  --text-color-body: #C0C0C0;
+  --text-color-soft: #868686;
+  --bottom-line-color: #686868;
+  --sidebar-gradient-top: #292929;
   --sidebar-gradient-bottom: #161617;
 }
 p {
@@ -25,9 +25,10 @@ p {
 .character-index.campaign-public-layout .character-quick-search h4,
 .item-index.campaign-public-layout .character-quick-search h4 {
   color: var(--text-color-big);
+  border-bottom: none;
 }
 .campaign-public-layout #sidebar {
-  color: var(--text-color);
+  color: var(--text-color-body);
 }
 .op-icon-gm,
 .preview-content h2,
@@ -40,7 +41,7 @@ input[type=password]::placeholder,
 input[type=tel]::placeholder,
 input[type=text]::placeholder,
 textarea::placeholder {
-  color: var(--soft-text-color);
+  color: var(--text-color-soft);
 }
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-maps-new .secret-sections > section,
@@ -70,25 +71,25 @@ textarea::placeholder {
 body.campaign-public-layout .post-section.post-gm-only,
 body.campaign-public-layout .post-section.post-main {
   background-color: var(--content-bg-light);
-  color: var(--text-color);
+  color: var(--text-color-body);
 }
 ul.as-selections li.as-selection-item {
   color: #333;
 }
-h1.title-edit,
-h2.title-edit,
-h3.title-edit,
-h4.title-edit,
-h5.title-edit,
-h6.title-edit {
-  border-bottom-color: var(--bottom-line-color);
-}
+.campaign-public-layout .main-content h2,
+.gm-only-header.title,
+.post-gm-only .title,
 .wiki-page div[itemprop=text] h2 {
   border-bottom: 1px solid var(--bottom-line-color);
-  margin-bottom: .375em;
+  margin-top: 32px;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+}
+.campaign-public-layout .main-content h2.wiki-page-name {
+  margin-top: 0;
 }
 body.campaign-public-layout .title ~ div[itemprop=text] {
-  margin-top: .5em;
+  margin-top: 24px;
 }
 .social-share-button {
   display: none;
