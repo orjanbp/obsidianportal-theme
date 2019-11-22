@@ -28,10 +28,10 @@ p {
 .section-header.stream .section-header-icon,
 .section-header.stream .name,
 .op-icon-gm,
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="tel"]::placeholder,
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder,
+input[type='tel']::placeholder,
 textarea::placeholder {
   color: var(--soft-text-color);
 }
@@ -48,12 +48,12 @@ textarea::placeholder {
 .campaign-maps-new section.main-section,
 body.campaign-public-layout .post-section.post-main,
 body.campaign-public-layout .post-section.post-gm-only,
-.campaign-public-layout.wiki-pages-edit .secret-sections>section,
-.campaign-public-layout.posts-edit .secret-sections>section,
-.campaign-public-layout.characters-edit .secret-sections>section,
-.campaign-public-layout.items-edit .secret-sections>section,
-.event-edit .secret-sections>section,
-.campaign-maps-new .secret-sections>section,
+.campaign-public-layout.wiki-pages-edit .secret-sections > section,
+.campaign-public-layout.posts-edit .secret-sections > section,
+.campaign-public-layout.characters-edit .secret-sections > section,
+.campaign-public-layout.items-edit .secret-sections > section,
+.event-edit .secret-sections > section,
+.campaign-maps-new .secret-sections > section,
 .character-index.campaign-public-layout .character-quick-search,
 .item-index.campaign-public-layout .character-quick-search,
 .character-show .main-content section,
@@ -79,12 +79,12 @@ h6.title-edit {
   border-bottom-color: var(--bottom-line-color);
 }
 
-.wiki-page div[itemprop="text"] h2 {
+.wiki-page div[itemprop='text'] h2 {
   border-bottom: 1px solid var(--bottom-line-color);
   margin-bottom: 0.375em;
 }
 
-body.campaign-public-layout .title~div[itemprop="text"] {
+body.campaign-public-layout .title ~ div[itemprop='text'] {
   margin-top: 0.5em;
 }
 

@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "gulp compile",
     "watch": "gulp watch",
+    "lint": "prettier --config ./.prettierrc.yaml --write src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +25,8 @@
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "prettier": "^1.19.1"
   },
   "dependencies": {}
 }
