@@ -46,6 +46,9 @@
   max-width: 80px;
 }
 
+/**
+  For Extra Large screens
+*/
 
 @media screen and (min-width: 1140px) {
   .campaign-public-layout #sidebar {
@@ -55,6 +58,10 @@
     margin-top: 0em;
   }
 }
+
+/**
+  For Large screens
+*/
 
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .campaign-public-layout #campaign-footer {
@@ -77,6 +84,10 @@
   }
 }
 
+/**
+  For Medium / Tablet screens and down
+*/
+
 @media screen and (max-width: 940px) {
   .campaign-public-layout #campaign-footer {
     margin-bottom: 0px;
@@ -85,6 +96,9 @@
   .campaign-public-layout #sidebar {
     display: flex;
     flex-wrap: wrap;
+    float: none;
+    width: 100%;
+    padding-top: 0.9375em;
   }
 
   .campaign-public-layout #sidebar .sidebar-party-members {
@@ -98,11 +112,9 @@
   }
 }
 
-@media screen and (max-width: 769px) {
-  .campaign-public-layout {
-    background-color: var(--main-bg-color);
-  }
-}
+/**
+  For Mobile screens
+*/
 
 @media screen and (max-width: 600px) {
   .campaign-public-layout #sidebar {

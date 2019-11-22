@@ -1,0 +1,37 @@
+/**
+  Heading style for the campaign body element. Everything
+  that is part of the pag emain content is under
+  .collapsable-nav-row
+*/
+
+.collapsable-nav-row {
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+/**
+  For Extra Large screens
+*/
+
+@media screen and (min-width: 1140px) {
+  .collapsable-nav-row {
+    display: flex;
+  }
+
+  .collapsable-nav-row .main-content-container {
+    width: 100%;
+    padding-top: 0px;
+  }
+}
+
+/**
+  For Large screens
+*/
+
+@media screen and (max-width: 1139px) and (min-width: 941px) {
+  .collapsable-nav-row .main-content-container {
+    float: none;
+    width: auto;
+    margin-left: 160px;
+  }
+}

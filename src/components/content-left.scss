@@ -1,8 +1,6 @@
-.collapsable-nav-row {
-  position: relative;
-  background-color: var(--main-bg-color);
-}
-
+/**
+  Left sidebar gradient
+*/
 .collapsable-nav-row .front-nav-container {
   background: -moz-linear-gradient(0deg,
       var(--gradient-color-dark) 0%,
@@ -22,6 +20,9 @@
   padding-top: 0.9375em;
 }
 
+/**
+  Left sidebar nav buttons
+*/
 
 .campaign-public-layout #campaign-nav {
   background: none;
@@ -40,11 +41,11 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 1140px) {
-  .collapsable-nav-row {
-    display: flex;
-  }
+/**
+  For Extra Large screens
+*/
 
+@media screen and (min-width: 1140px) {
   .collapsable-nav-row .front-nav-container {
     width: 160px;
     min-width: 160px;
@@ -54,13 +55,11 @@
   .collapsable-nav-row .front-nav-container #campaign-nav {
     width: 130px;
   }
-
-  .collapsable-nav-row .main-content-container {
-    width: 100%;
-    padding-top: 0.9375em;
-  }
 }
 
+/**
+  For Large screens
+*/
 
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .collapsable-nav-row .front-nav-container {
@@ -84,7 +83,9 @@
   }
 }
 
-
+/**
+  For Medium / Tablet screens and down
+*/
 
 @media screen and (max-width: 940px) {
   .collapsable-nav-row {
@@ -94,12 +95,5 @@
 
   .collapsable-nav-row .front-nav-container {
     display: none !important;
-  }
-
-  .collapsable-nav-row .main-content-container,
-  .campaign-public-layout #sidebar {
-    float: none;
-    width: 100%;
-    padding-top: 0.9375em;
   }
 }

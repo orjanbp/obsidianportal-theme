@@ -107,6 +107,22 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   position: relative;
   background-color: var(--main-bg-color)
 }
+@media screen and (min-width:1140px) {
+  .collapsable-nav-row {
+    display: flex
+  }
+  .collapsable-nav-row .main-content-container {
+    width: 100%;
+    padding-top: 0
+  }
+}
+@media screen and (max-width:1139px) and (min-width:941px) {
+  .collapsable-nav-row .main-content-container {
+    float: none;
+    width: auto;
+    margin-left: 160px
+  }
+}
 .collapsable-nav-row .front-nav-container {
   background: -moz-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
   background: -webkit-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
@@ -129,9 +145,6 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   opacity: 1
 }
 @media screen and (min-width:1140px) {
-  .collapsable-nav-row {
-    display: flex
-  }
   .collapsable-nav-row .front-nav-container {
     width: 160px;
     min-width: 160px;
@@ -139,10 +152,6 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   }
   .collapsable-nav-row .front-nav-container #campaign-nav {
     width: 130px
-  }
-  .collapsable-nav-row .main-content-container {
-    width: 100%;
-    padding-top: .9375em
   }
 }
 @media screen and (max-width:1139px) and (min-width:941px) {
@@ -171,12 +180,6 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   }
   .collapsable-nav-row .front-nav-container {
     display: none!important
-  }
-  .campaign-public-layout #sidebar,
-  .collapsable-nav-row .main-content-container {
-    float: none;
-    width: 100%;
-    padding-top: .9375em
   }
 }
 .campaign-public-layout #campaign-footer .inline-list > li {
@@ -249,7 +252,10 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   }
   .campaign-public-layout #sidebar {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    float: none;
+    width: 100%;
+    padding-top: .9375em
   }
   .campaign-public-layout #sidebar .sidebar-party-members {
     width: 49%;
@@ -258,11 +264,6 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   .campaign-public-layout #sidebar #campaign-quick-stats {
     width: 49%;
     margin-left: 1%
-  }
-}
-@media screen and (max-width:769px) {
-  .campaign-public-layout {
-    background-color: var(--main-bg-color)
   }
 }
 @media screen and (max-width:600px) {
