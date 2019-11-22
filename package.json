@@ -17,10 +17,8 @@
   },
   "homepage": "https://github.com/orjanbp/obsidianportal-theme#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
-  },
-  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
     "gulp-concat": "^2.6.1"
   }
 }
