@@ -2,21 +2,31 @@
   Left sidebar gradient
 */
 .collapsable-nav-row .front-nav-container {
-  background: -moz-linear-gradient(0deg,
-      var(--gradient-color-dark) 0%,
-      var(--gradient-color-light) 100%);
-  background: -webkit-linear-gradient(0deg,
-      var(--gradient-color-dark) 0%,
-      var(--gradient-color-light) 100%);
-  background: -o-linear-gradient(0deg,
-      var(--gradient-color-dark) 0%,
-      var(--gradient-color-light) 100%);
-  background: -ms-linear-gradient(0deg,
-      var(--gradient-color-dark) 0%,
-      var(--gradient-color-light) 100%);
-  background: linear-gradient(0deg,
-      var(--gradient-color-dark) 0%,
-      var(--gradient-color-light) 100%);
+  background: -moz-linear-gradient(
+    to bottom,
+    var(--gradient-color-light) 0%,
+    var(--gradient-color-dark) 100%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    var(--gradient-color-light) 0%,
+    var(--gradient-color-dark) 100%
+  );
+  background: -o-linear-gradient(
+    to bottom,
+    var(--gradient-color-light) 0%,
+    var(--gradient-color-dark) 100%
+  );
+  background: -ms-linear-gradient(
+    to bottom,
+    var(--gradient-color-light) 0%,
+    var(--gradient-color-dark) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-color-light) 0%,
+    var(--gradient-color-dark) 100%
+  );
   padding-top: 0.9375em;
 }
 
