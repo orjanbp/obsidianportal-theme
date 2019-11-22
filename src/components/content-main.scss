@@ -4,9 +4,28 @@
   .collapsable-nav-row
 */
 
+/** Styles for the body element, which has the given
+  class '.campaign-public-layout'.
+*/
+
+.campaign-public-layout {
+  background-color: var(--gradient-color-dark);
+}
+
+.campaign-public-layout #content {
+  width: 100%;
+  max-width: 100%;
+}
+
+/**
+  Styles for the main body, that contains the sidebars and
+  the main center content.
+*/
+
 .collapsable-nav-row {
   position: relative;
   background-color: var(--main-bg-color);
+  max-width: var(--content-max-width);
 }
 
 /**

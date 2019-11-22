@@ -6,7 +6,10 @@
   --bottom-line-color: #323638;
   --text-color: #dee2e6;
   --text-color-big: #fff;
-  --soft-text-color: #868e96
+  --soft-text-color: #868e96;
+  --content-max-width: 1200px;
+  --background-image-height: 600px;
+  --background-image-position: center 30%
 }
 p {
   font-size: .875em
@@ -41,6 +44,7 @@ textarea::placeholder {
 .campaign-maps-new .secret-sections > section,
 .campaign-maps-new section.main-section,
 .campaign-public-layout #sidebar .module,
+.campaign-public-layout .main-content,
 .campaign-public-layout.characters-edit .secret-sections > section,
 .campaign-public-layout.characters-edit section.main-section,
 .campaign-public-layout.items-edit .secret-sections > section,
@@ -87,25 +91,24 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 .social-share-button {
   display: none
 }
+.campaign-public-layout .page-background {
+  max-height: var(--background-image-height);
+  background-position: var(--background-image-position)
+}
+.campaign-public-layout .highlight-container {
+  height: 4px
+}
 .campaign-public-layout {
   background-color: var(--gradient-color-dark)
 }
 .campaign-public-layout #content {
+  width: 100%;
   max-width: 100%
-}
-.campaign-public-layout .main-content {
-  color: var(--text-color)
-}
-.campaign-public-layout .page-background {
-  max-height: 500px;
-  background-position: center 30%
-}
-.campaign-public-layout .highlight-container {
-  height: 3px
 }
 .collapsable-nav-row {
   position: relative;
-  background-color: var(--main-bg-color)
+  background-color: var(--main-bg-color);
+  max-width: var(--content-max-width)
 }
 @media screen and (min-width:1140px) {
   .collapsable-nav-row {

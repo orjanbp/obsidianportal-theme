@@ -37,31 +37,32 @@ textarea::placeholder {
 }
 
 .campaign-landing-show .campaign-landing-page-container,
+.campaign-maps-new .secret-sections > section,
+.campaign-maps-new section.main-section,
 .campaign-public-layout #sidebar .module,
-.sidebar-last-updated,
+body.campaign-public-layout .post-section.post-gm-only,
+body.campaign-public-layout .post-section.post-main,
+.campaign-public-layout.characters-edit .secret-sections > section,
+.campaign-public-layout.characters-edit section.main-section,
+.campaign-public-layout.items-edit .secret-sections > section,
+.campaign-public-layout.items-edit section.main-section,
+.campaign-public-layout .main-content,
+.campaign-public-layout.posts-edit .secret-sections > section,
+.campaign-public-layout.posts-edit section.main-section,
+.campaign-public-layout.wiki-pages-edit .secret-sections > section,
 .campaign-public-layout.wiki-pages-edit section.main-section,
 .campaign-public-layout.wiki-pages-edit section.main-section label,
-.campaign-public-layout.posts-edit section.main-section,
-.campaign-public-layout.characters-edit section.main-section,
-.campaign-public-layout.items-edit section.main-section,
-.event-edit section.main-section,
-.campaign-maps-new section.main-section,
-body.campaign-public-layout .post-section.post-main,
-body.campaign-public-layout .post-section.post-gm-only,
-.campaign-public-layout.wiki-pages-edit .secret-sections > section,
-.campaign-public-layout.posts-edit .secret-sections > section,
-.campaign-public-layout.characters-edit .secret-sections > section,
-.campaign-public-layout.items-edit .secret-sections > section,
-.event-edit .secret-sections > section,
-.campaign-maps-new .secret-sections > section,
-.character-index.campaign-public-layout .character-quick-search,
-.item-index.campaign-public-layout .character-quick-search,
-.character-show .main-content section,
-.item-show .main-content section,
 .character-index.campaign-public-layout .character-list-item,
-.item-index.campaign-public-layout .character-list-item,
+.character-index.campaign-public-layout .character-quick-search,
 .character-index.campaign-public-layout .filter-options,
-.item-index.campaign-public-layout .filter-options {
+.character-show .main-content section,
+.event-edit .secret-sections > section,
+.event-edit section.main-section,
+.item-index.campaign-public-layout .character-list-item,
+.item-index.campaign-public-layout .character-quick-search,
+.item-index.campaign-public-layout .filter-options,
+.item-show .main-content section,
+.sidebar-last-updated {
   background-color: var(--bg-color-light);
   color: var(--text-color);
 }
@@ -90,16 +91,4 @@ body.campaign-public-layout .title ~ div[itemprop='text'] {
 
 .social-share-button {
   display: none;
-}
-
-.campaign-public-layout {
-  background-color: var(--gradient-color-dark);
-}
-
-.campaign-public-layout #content {
-  max-width: 100%;
-}
-
-.campaign-public-layout .main-content {
-  color: var(--text-color);
 }

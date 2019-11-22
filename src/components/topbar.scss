@@ -1,8 +1,14 @@
+/**
+ * This file contains styling for the dragon logo topbar with the
+ * campaign title, as well as the background image used for
+ * the campaign.
+*/
+
 .campaign-public-layout .page-background {
-  max-height: 500px;
-  background-position: center 30%;
+  max-height: var(--background-image-height);
+  background-position: var(--background-image-position);
 }
 
 .campaign-public-layout .highlight-container {
-  height: 3px;
+  height: 4px;
 }
