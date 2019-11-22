@@ -4,15 +4,48 @@
  * the campaign.
 */
 
+/**
+ Make summary row follow max-width variable
+*/
+
+.campaign-public-layout #campaign-summary-row {
+  max-width: var(--content-max-width);
+}
+
+.campaign-public-layout #campaign-summary-row .campaign-title {
+  font-size: var(--title-font-size);
+}
+
+@media screen and (max-width: 940px) {
+  .campaign-public-layout #campaign-summary-row .campaign-title {
+    font-size: calc(var(--title-font-size) * 0.8);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .campaign-public-layout #campaign-summary-row .campaign-title {
+    font-size: calc(var(--title-font-size) * 0.65);
+  }
+}
+
 .campaign-public-layout .highlight-container {
   height: 4px;
 }
+
+/**
+  Reposition background and apply variables
+*/
 
 .campaign-public-layout .page-background {
   position: absolute;
   max-height: var(--background-image-height);
   background-position: var(--background-image-position);
 }
+
+/**
+  Add gradient to fa\de the background image into the
+  background colour.
+*/
 
 .campaign-public-layout .page-background::after {
   content: '';
@@ -25,26 +58,26 @@
   background: -moz-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 50%,
-    var(--gradient-color-dark) 0%
+    var(--body-bg-color) 95%
   );
   background: -webkit-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 50%,
-    var(--gradient-color-dark) 0%
+    var(--body-bg-color) 95%
   );
   background: -o-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 50%,
-    var(--gradient-color-dark) 0%
+    var(--body-bg-color) 95%
   );
   background: -ms-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 50%,
-    var(--gradient-color-dark) 0%
+    var(--body-bg-color) 95%
   );
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 50%,
-    var(--gradient-color-dark) 10%
+    var(--body-bg-color) 95%
   );
 }

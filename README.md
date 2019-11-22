@@ -24,13 +24,21 @@ At the top of each `style-[name].css` file located under `themes`, there is a li
 
 ```css
 :root {
-  --main-bg-color: #161617;
-  --bg-color-light: #1f2022;
-  --gradient-color-dark: #161617;
-  --gradient-color-light: #1f2022;
+  --content-max-width: 1400px;
+  --body-bg-color: #161617;
+  --background-image-height: 600px;
+  --background-image-position: center 30%;
+  --title-font-size: 2.5rem;
+
+  --content-bg-dark: #161617;
+  --content-bg-light: #1f2022;
+
   --bottom-line-color: #323638;
   --text-color: #dee2e6;
   --text-color-big: #fff;
   --soft-text-color: #868e96;
+
+  --sidebar-gradient-top: #1f2022;
+  --sidebar-gradient-bottom: #161617;
 }
 ```

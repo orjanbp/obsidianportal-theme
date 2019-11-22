@@ -9,7 +9,7 @@
 */
 
 .campaign-public-layout {
-  background-color: var(--gradient-color-dark);
+  background-color: var(--sidebar-gradient-bottom);
 }
 
 .campaign-public-layout #content {
@@ -24,7 +24,7 @@
 
 .collapsable-nav-row {
   position: relative;
-  background-color: var(--main-bg-color);
+  background-color: var(--content-bg-dark);
   max-width: var(--content-max-width);
   padding: 16px;
 }
