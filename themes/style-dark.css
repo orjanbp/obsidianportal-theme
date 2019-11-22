@@ -109,6 +109,11 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   position: relative;
   background-color: var(--main-bg-color);
   max-width: var(--content-max-width);
+  padding: 16px;
+}
+.collapsable-nav-row .main-content-container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media screen and (min-width:1140px) {
   .collapsable-nav-row {
@@ -124,6 +129,21 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
     float: none;
     width: auto;
     margin-left: 160px;
+  }
+}
+@media screen and (max-width:940px) {
+  .collapsable-nav-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .collapsable-nav-row .front-nav-container {
+    display: none!important;
+  }
+  .collapsable-nav-row .main-content-container {
+    position: relative;
+    float: none;
+    padding: 0;
+    width: 100%;
   }
 }
 .collapsable-nav-row .front-nav-container {
@@ -147,23 +167,18 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 .campaign-public-layout #campaign-nav li.active {
   opacity: 1;
 }
-@media screen and (min-width:1140px) {
-  .collapsable-nav-row .front-nav-container {
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
-  }
-  .collapsable-nav-row .front-nav-container #campaign-nav {
-    width: 130px;
-  }
+.collapsable-nav-row .front-nav-container {
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
+}
+.collapsable-nav-row .front-nav-container #campaign-nav {
+  width: 130px;
 }
 @media screen and (max-width:1139px) and (min-width:941px) {
   .collapsable-nav-row .front-nav-container {
     position: absolute;
     height: 100%;
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
   }
   .collapsable-nav-row .front-nav-container #campaign-nav {
     width: 130px;
@@ -172,8 +187,8 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   .collapsable-nav-row .main-content-container {
     float: none;
     width: auto;
-    padding-top: .9375em;
     margin-left: 160px;
+    padding-right: 0;
   }
 }
 @media screen and (max-width:940px) {
@@ -193,8 +208,8 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 .sidebar-last-updated {
   width: 100%;
   border: none;
-  padding: .625em;
-  margin-bottom: .9375em;
+  padding: 8px;
+  margin-bottom: 16px;
 }
 .comment-count-wrapper,
 .fan-count-wrapper,
@@ -227,9 +242,8 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 @media screen and (min-width:1140px) {
   .campaign-public-layout #sidebar {
     min-width: 250px;
-    padding-top: .9375em;
-    padding-left: 0;
     margin-top: 0;
+    padding: 0;
   }
 }
 @media screen and (max-width:1139px) and (min-width:941px) {
@@ -241,12 +255,12 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
     flex-wrap: wrap;
   }
   .campaign-public-layout #sidebar .sidebar-party-members {
-    width: 49%;
-    margin-right: 1%;
+    width: calc(50% - 8px);
+    margin-right: 8px;
   }
   .campaign-public-layout #sidebar #campaign-quick-stats {
-    width: 49%;
-    margin-left: 1%;
+    width: calc(50% - 8px);
+    margin-left: 8px;
   }
 }
 @media screen and (max-width:940px) {
@@ -258,15 +272,15 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
     flex-wrap: wrap;
     float: none;
     width: 100%;
-    padding-top: .9375em;
+    padding: 0;
   }
   .campaign-public-layout #sidebar .sidebar-party-members {
-    width: 49%;
-    margin-right: 1%;
+    width: calc(50% - 8px);
+    margin-right: 8px;
   }
   .campaign-public-layout #sidebar #campaign-quick-stats {
-    width: 49%;
-    margin-left: 1%;
+    width: calc(50% - 8px);
+    margin-left: 8px;
   }
 }
 @media screen and (max-width:600px) {

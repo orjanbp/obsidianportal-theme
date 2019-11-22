@@ -26,6 +26,12 @@
   position: relative;
   background-color: var(--main-bg-color);
   max-width: var(--content-max-width);
+  padding: 16px;
+}
+
+.collapsable-nav-row .main-content-container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /**
@@ -52,5 +58,30 @@
     float: none;
     width: auto;
     margin-left: 160px;
+  }
+}
+
+
+/**
+  For Medium / Tablet screens and down. There's an issue at this
+  size with how we've moved things to the bottom of the page, so we
+  need to restate the main content width.
+*/
+
+@media screen and (max-width: 940px) {
+  .collapsable-nav-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collapsable-nav-row .front-nav-container {
+    display: none !important;
+  }
+
+  .collapsable-nav-row .main-content-container {
+    position: relative;
+    float: none;
+    padding: 0px;
+    width: 100%;
   }
 }

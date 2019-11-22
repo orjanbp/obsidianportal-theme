@@ -2,31 +2,21 @@
   Left sidebar gradient
 */
 .collapsable-nav-row .front-nav-container {
-  background: -moz-linear-gradient(
-    0deg,
-    var(--gradient-color-dark) 0%,
-    var(--gradient-color-light) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    var(--gradient-color-dark) 0%,
-    var(--gradient-color-light) 100%
-  );
-  background: -o-linear-gradient(
-    0deg,
-    var(--gradient-color-dark) 0%,
-    var(--gradient-color-light) 100%
-  );
-  background: -ms-linear-gradient(
-    0deg,
-    var(--gradient-color-dark) 0%,
-    var(--gradient-color-light) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    var(--gradient-color-dark) 0%,
-    var(--gradient-color-light) 100%
-  );
+  background: -moz-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -webkit-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -o-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -ms-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
   padding-top: 0.9375em;
 }
 
@@ -52,32 +42,31 @@
 }
 
 /**
-  For Extra Large screens
+  Styling of the left-hand nav sidebar on larger screens. The
+  inner width of the campaign nav is hardcoded to work around
+  the CSS that's being overwritten.
 */
 
-@media screen and (min-width: 1140px) {
-  .collapsable-nav-row .front-nav-container {
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
-  }
+.collapsable-nav-row .front-nav-container {
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
+}
 
-  .collapsable-nav-row .front-nav-container #campaign-nav {
-    width: 130px;
-  }
+.collapsable-nav-row .front-nav-container #campaign-nav {
+  width: 130px;
 }
 
 /**
-  For Large screens
+  For Large screens. The left-hand can't anchor down to the
+  bottom of the page in the same way at this resolution, so
+  we're cheating the system by making it absolute.
 */
 
 @media screen and (max-width: 1139px) and (min-width: 941px) {
   .collapsable-nav-row .front-nav-container {
     position: absolute;
     height: 100%;
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
   }
 
   .collapsable-nav-row .front-nav-container #campaign-nav {
@@ -88,8 +77,8 @@
   .campaign-public-layout #sidebar {
     float: none;
     width: auto;
-    padding-top: 0.9375em;
     margin-left: 160px;
+    padding-right: 0px;
   }
 }
 

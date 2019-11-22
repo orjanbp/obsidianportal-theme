@@ -1,4 +1,4 @@
-.campaign-public-layout #campaign-footer .inline-list > li {
+.campaign-public-layout #campaign-footer .inline-list>li {
   margin-left: 0.7em !important;
 }
 
@@ -7,8 +7,8 @@
 .sidebar-last-updated {
   width: 100%;
   border: none;
-  padding: 0.625em;
-  margin-bottom: 0.9375em;
+  padding: 8px;
+  margin-bottom: 16px;
 }
 
 .sidebar-party-members .game-master,
@@ -53,9 +53,8 @@
 @media screen and (min-width: 1140px) {
   .campaign-public-layout #sidebar {
     min-width: 250px;
-    padding-top: 0.9375em;
-    padding-left: 0em;
-    margin-top: 0em;
+    margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -74,13 +73,13 @@
   }
 
   .campaign-public-layout #sidebar .sidebar-party-members {
-    width: 49%;
-    margin-right: 1%;
+    width: calc(50% - 8px);
+    margin-right: 8px;
   }
 
   .campaign-public-layout #sidebar #campaign-quick-stats {
-    width: 49%;
-    margin-left: 1%;
+    width: calc(50% - 8px);
+    margin-left: 8px;
   }
 }
 
@@ -98,17 +97,17 @@
     flex-wrap: wrap;
     float: none;
     width: 100%;
-    padding-top: 0.9375em;
+    padding: 0px;
   }
 
   .campaign-public-layout #sidebar .sidebar-party-members {
-    width: 49%;
-    margin-right: 1%;
+    width: calc(50% - 8px);
+    margin-right: 8px;
   }
 
   .campaign-public-layout #sidebar #campaign-quick-stats {
-    width: 49%;
-    margin-left: 1%;
+    width: calc(50% - 8px);
+    margin-left: 8px;
   }
 }
 
