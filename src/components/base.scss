@@ -1,0 +1,105 @@
+/**
+ * This file should contain references to text, font sizes,
+ * text colours, background colours, and so forth. It should
+ */
+
+p {
+  font-size: 0.875em;
+}
+
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h4,
+.campaign-public-layout .main-content h5,
+.campaign-public-layout .main-content h6,
+.character-index.campaign-public-layout .character-quick-search h4,
+.item-index.campaign-public-layout .character-quick-search h4 {
+  color: var(--text-color-big);
+}
+
+.campaign-public-layout #sidebar {
+  color: var(--text-color);
+}
+
+.preview-contnet h1,
+.preview-content h2,
+.preview-content h3,
+.section-header.stream .section-header-icon,
+.section-header.stream .name,
+.op-icon-gm,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  color: var(--soft-text-color);
+}
+
+.campaign-landing-show .campaign-landing-page-container,
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated,
+.campaign-public-layout.wiki-pages-edit section.main-section,
+.campaign-public-layout.wiki-pages-edit section.main-section label,
+.campaign-public-layout.posts-edit section.main-section,
+.campaign-public-layout.characters-edit section.main-section,
+.campaign-public-layout.items-edit section.main-section,
+.event-edit section.main-section,
+.campaign-maps-new section.main-section,
+body.campaign-public-layout .post-section.post-main,
+body.campaign-public-layout .post-section.post-gm-only,
+.campaign-public-layout.wiki-pages-edit .secret-sections>section,
+.campaign-public-layout.posts-edit .secret-sections>section,
+.campaign-public-layout.characters-edit .secret-sections>section,
+.campaign-public-layout.items-edit .secret-sections>section,
+.event-edit .secret-sections>section,
+.campaign-maps-new .secret-sections>section,
+.character-index.campaign-public-layout .character-quick-search,
+.item-index.campaign-public-layout .character-quick-search,
+.character-show .main-content section,
+.item-show .main-content section,
+.character-index.campaign-public-layout .character-list-item,
+.item-index.campaign-public-layout .character-list-item,
+.character-index.campaign-public-layout .filter-options,
+.item-index.campaign-public-layout .filter-options {
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+}
+
+ul.as-selections li.as-selection-item {
+  color: #333;
+}
+
+h1.title-edit,
+h2.title-edit,
+h3.title-edit,
+h4.title-edit,
+h5.title-edit,
+h6.title-edit {
+  border-bottom-color: var(--bottom-line-color);
+}
+
+.wiki-page div[itemprop="text"] h2 {
+  border-bottom: 1px solid var(--bottom-line-color);
+  margin-bottom: 0.375em;
+}
+
+body.campaign-public-layout .title~div[itemprop="text"] {
+  margin-top: 0.5em;
+}
+
+.social-share-button {
+  display: none;
+}
+
+.campaign-public-layout {
+  background-color: var(--gradient-color-dark);
+}
+
+.campaign-public-layout #content {
+  max-width: 100%;
+}
+
+.campaign-public-layout .main-content {
+  color: var(--text-color);
+}

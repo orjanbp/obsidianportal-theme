@@ -1,18 +1,22 @@
-'use strict';
- 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
- 
-gulp.task('sass', function () {
-  return gulp.src('./src/sass/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest('./src/css'));
-});
- 
-gulp.task('sass:watch', function () {
-  gulp.watch('./src/sass/*.scss', ['sass']);
-});
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const cleancss = require('gulp-clean-css')
+const rename = require('gulp-rename')
 
-gulp.task('default', ['sass:watch']);
+const compile = () => {
+  return gulp
+    .src('./src/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cleancss({ format: 'beautify' }))
+    .pipe(rename({ extname: '.css' }))
+    .pipe(gulp.dest('./themes'))
+}
+
+const watch = () => {
+  gulp.watch(['./src/**/*'], compile)
+}
+
+exports.compile = compile
+exports.watch = watch
+
+exports.default = gulp.parallel(compile)

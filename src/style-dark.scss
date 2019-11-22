@@ -1,0 +1,20 @@
+/**
+ * This is a themefile, applying a set of styles to be used
+ * when compiling a themed style from the available components.
+ * It then imports all partials afterwards, so that this single
+ * SCSS file can be compiled into a CSS file without needing to
+ * gather all SASS files during the build.
+ */
+
+ :root {
+    --main-bg-color: #161617;
+    --bg-color-light: #1f2022;
+    --gradient-color-dark: #161617;
+    --gradient-color-light: #1f2022;
+    --bottom-line-color: #323638;
+    --text-color: #dee2e6;
+    --text-color-big: #fff;
+    --soft-text-color: #868e96;
+  }
+
+@import './components/_partials.scss';

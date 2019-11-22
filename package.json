@@ -4,6 +4,8 @@
   "description": "CSS styling for Obsidian Portal campaigns, to bring the campaign's frontpage and wiki more in line with other pages",
   "main": "index.js",
   "scripts": {
+    "compile": "gulp compile",
+    "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +20,11 @@
   "homepage": "https://github.com/orjanbp/obsidianportal-theme#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-concat": "^2.6.1"
-  }
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {}
 }

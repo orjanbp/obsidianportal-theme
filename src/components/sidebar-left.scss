@@ -1,0 +1,105 @@
+.collapsable-nav-row {
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+.collapsable-nav-row .front-nav-container {
+  background: -moz-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -webkit-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -o-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: -ms-linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  background: linear-gradient(0deg,
+      var(--gradient-color-dark) 0%,
+      var(--gradient-color-light) 100%);
+  padding-top: 0.9375em;
+}
+
+
+.campaign-public-layout #campaign-nav {
+  background: none;
+}
+
+.campaign-public-layout #campaign-nav .icon {
+  background: none;
+}
+
+.campaign-public-layout #campaign-nav li {
+  opacity: 0.6;
+  font-weight: normal;
+}
+
+.campaign-public-layout #campaign-nav li.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1140px) {
+  .collapsable-nav-row {
+    display: flex;
+  }
+
+  .collapsable-nav-row .front-nav-container {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .collapsable-nav-row .front-nav-container #campaign-nav {
+    width: 130px;
+  }
+
+  .collapsable-nav-row .main-content-container {
+    width: 100%;
+    padding-top: 0.9375em;
+  }
+}
+
+
+@media screen and (max-width: 1139px) and (min-width: 941px) {
+  .collapsable-nav-row .front-nav-container {
+    position: absolute;
+    height: 100%;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .collapsable-nav-row .front-nav-container #campaign-nav {
+    width: 130px;
+  }
+
+  .collapsable-nav-row .main-content-container,
+  .campaign-public-layout #sidebar {
+    float: none;
+    width: auto;
+    padding-top: 0.9375em;
+    margin-left: 160px;
+  }
+}
+
+
+
+@media screen and (max-width: 940px) {
+  .collapsable-nav-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collapsable-nav-row .front-nav-container {
+    display: none !important;
+  }
+
+  .collapsable-nav-row .main-content-container,
+  .campaign-public-layout #sidebar {
+    float: none;
+    width: 100%;
+    padding-top: 0.9375em;
+  }
+}

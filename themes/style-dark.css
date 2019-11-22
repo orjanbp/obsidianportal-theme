@@ -1,0 +1,288 @@
+:root {
+  --main-bg-color: #161617;
+  --bg-color-light: #1f2022;
+  --gradient-color-dark: #161617;
+  --gradient-color-light: #1f2022;
+  --bottom-line-color: #323638;
+  --text-color: #dee2e6;
+  --text-color-big: #fff;
+  --soft-text-color: #868e96
+}
+p {
+  font-size: .875em
+}
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h4,
+.campaign-public-layout .main-content h5,
+.campaign-public-layout .main-content h6,
+.character-index.campaign-public-layout .character-quick-search h4,
+.item-index.campaign-public-layout .character-quick-search h4 {
+  color: var(--text-color-big)
+}
+.campaign-public-layout #sidebar {
+  color: var(--text-color)
+}
+.op-icon-gm,
+.preview-content h2,
+.preview-content h3,
+.preview-contnet h1,
+.section-header.stream .name,
+.section-header.stream .section-header-icon,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=tel]::placeholder,
+input[type=text]::placeholder,
+textarea::placeholder {
+  color: var(--soft-text-color)
+}
+.campaign-landing-show .campaign-landing-page-container,
+.campaign-maps-new .secret-sections > section,
+.campaign-maps-new section.main-section,
+.campaign-public-layout #sidebar .module,
+.campaign-public-layout.characters-edit .secret-sections > section,
+.campaign-public-layout.characters-edit section.main-section,
+.campaign-public-layout.items-edit .secret-sections > section,
+.campaign-public-layout.items-edit section.main-section,
+.campaign-public-layout.posts-edit .secret-sections > section,
+.campaign-public-layout.posts-edit section.main-section,
+.campaign-public-layout.wiki-pages-edit .secret-sections > section,
+.campaign-public-layout.wiki-pages-edit section.main-section,
+.campaign-public-layout.wiki-pages-edit section.main-section label,
+.character-index.campaign-public-layout .character-list-item,
+.character-index.campaign-public-layout .character-quick-search,
+.character-index.campaign-public-layout .filter-options,
+.character-show .main-content section,
+.event-edit .secret-sections > section,
+.event-edit section.main-section,
+.item-index.campaign-public-layout .character-list-item,
+.item-index.campaign-public-layout .character-quick-search,
+.item-index.campaign-public-layout .filter-options,
+.item-show .main-content section,
+.sidebar-last-updated,
+body.campaign-public-layout .post-section.post-gm-only,
+body.campaign-public-layout .post-section.post-main {
+  background-color: var(--bg-color-light);
+  color: var(--text-color)
+}
+ul.as-selections li.as-selection-item {
+  color: #333
+}
+h1.title-edit,
+h2.title-edit,
+h3.title-edit,
+h4.title-edit,
+h5.title-edit,
+h6.title-edit {
+  border-bottom-color: var(--bottom-line-color)
+}
+.wiki-page div[itemprop=text] h2 {
+  border-bottom: 1px solid var(--bottom-line-color);
+  margin-bottom: .375em
+}
+body.campaign-public-layout .title ~ div[itemprop=text] {
+  margin-top: .5em
+}
+.social-share-button {
+  display: none
+}
+.campaign-public-layout {
+  background-color: var(--gradient-color-dark)
+}
+.campaign-public-layout #content {
+  max-width: 100%
+}
+.campaign-public-layout .main-content {
+  color: var(--text-color)
+}
+.campaign-public-layout .page-background {
+  max-height: 500px;
+  background-position: center 30%
+}
+.campaign-public-layout .highlight-container {
+  height: 3px
+}
+.collapsable-nav-row {
+  position: relative;
+  background-color: var(--main-bg-color)
+}
+.collapsable-nav-row .front-nav-container {
+  background: -moz-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
+  background: -webkit-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
+  background: -o-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
+  background: -ms-linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
+  background: linear-gradient(0deg,var(--gradient-color-dark) 0,var(--gradient-color-light) 100%);
+  padding-top: .9375em
+}
+.campaign-public-layout #campaign-nav {
+  background: 0 0
+}
+.campaign-public-layout #campaign-nav .icon {
+  background: 0 0
+}
+.campaign-public-layout #campaign-nav li {
+  opacity: .6;
+  font-weight: 400
+}
+.campaign-public-layout #campaign-nav li.active {
+  opacity: 1
+}
+@media screen and (min-width:1140px) {
+  .collapsable-nav-row {
+    display: flex
+  }
+  .collapsable-nav-row .front-nav-container {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px
+  }
+  .collapsable-nav-row .front-nav-container #campaign-nav {
+    width: 130px
+  }
+  .collapsable-nav-row .main-content-container {
+    width: 100%;
+    padding-top: .9375em
+  }
+}
+@media screen and (max-width:1139px) and (min-width:941px) {
+  .collapsable-nav-row .front-nav-container {
+    position: absolute;
+    height: 100%;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px
+  }
+  .collapsable-nav-row .front-nav-container #campaign-nav {
+    width: 130px
+  }
+  .campaign-public-layout #sidebar,
+  .collapsable-nav-row .main-content-container {
+    float: none;
+    width: auto;
+    padding-top: .9375em;
+    margin-left: 160px
+  }
+}
+@media screen and (max-width:940px) {
+  .collapsable-nav-row {
+    display: flex;
+    flex-direction: column
+  }
+  .collapsable-nav-row .front-nav-container {
+    display: none!important
+  }
+  .campaign-public-layout #sidebar,
+  .collapsable-nav-row .main-content-container {
+    float: none;
+    width: 100%;
+    padding-top: .9375em
+  }
+}
+.campaign-public-layout #campaign-footer .inline-list > li {
+  margin-left: .7em!important
+}
+.campaign-landing-show .campaign-landing-page-container,
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated {
+  width: 100%;
+  border: none;
+  padding: .625em;
+  margin-bottom: .9375em
+}
+.comment-count-wrapper,
+.fan-count-wrapper,
+.sidebar-party-members .game-master {
+  background: 0 0;
+  border: none;
+  max-width: none
+}
+.sidebar-last-updated {
+  width: 100%!important
+}
+.sidebar-see-all-wiki-pages {
+  padding: 0!important
+}
+.sidebar-party-members .game-master .small-3 {
+  max-width: 50px
+}
+.sidebar-party-members .player-characters .player {
+  clear: none;
+  max-width: 70px;
+  max-height: 60px;
+  padding-bottom: .625em
+}
+.sidebar-last-updated .updated-by-container .when .time {
+  padding-top: 0
+}
+.recent-updates .recent-update .avatar {
+  max-width: 80px
+}
+@media screen and (min-width:1140px) {
+  .campaign-public-layout #sidebar {
+    min-width: 250px;
+    padding-top: .9375em;
+    padding-left: 0;
+    margin-top: 0
+  }
+}
+@media screen and (max-width:1139px) and (min-width:941px) {
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0
+  }
+  .campaign-public-layout #sidebar {
+    display: flex;
+    flex-wrap: wrap
+  }
+  .campaign-public-layout #sidebar .sidebar-party-members {
+    width: 49%;
+    margin-right: 1%
+  }
+  .campaign-public-layout #sidebar #campaign-quick-stats {
+    width: 49%;
+    margin-left: 1%
+  }
+}
+@media screen and (max-width:940px) {
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0
+  }
+  .campaign-public-layout #sidebar {
+    display: flex;
+    flex-wrap: wrap
+  }
+  .campaign-public-layout #sidebar .sidebar-party-members {
+    width: 49%;
+    margin-right: 1%
+  }
+  .campaign-public-layout #sidebar #campaign-quick-stats {
+    width: 49%;
+    margin-left: 1%
+  }
+}
+@media screen and (max-width:769px) {
+  .campaign-public-layout {
+    background-color: var(--main-bg-color)
+  }
+}
+@media screen and (max-width:600px) {
+  .campaign-public-layout #sidebar {
+    display: block
+  }
+  .campaign-public-layout #sidebar #campaign-quick-stats,
+  .campaign-public-layout #sidebar .sidebar-party-members {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+  }
+}
+.markItUpHeader > ul {
+  display: inline-block;
+  height: 20px;
+  width: auto;
+  padding: 2px;
+  background-color: rgba(255,255,255,.8)
+}
+.campaign-textarea-container .embed-buttons .button:nth-of-type(1) {
+  margin-top: 27px
+}

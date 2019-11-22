@@ -1,0 +1,118 @@
+.campaign-public-layout #campaign-footer .inline-list>li {
+  margin-left: 0.7em !important;
+}
+
+.campaign-landing-show .campaign-landing-page-container,
+.campaign-public-layout #sidebar .module,
+.sidebar-last-updated {
+  width: 100%;
+  border: none;
+  padding: 0.625em;
+  margin-bottom: 0.9375em;
+}
+
+.sidebar-party-members .game-master,
+.fan-count-wrapper,
+.comment-count-wrapper {
+  background: none;
+  border: none;
+  max-width: none;
+}
+
+.sidebar-last-updated {
+  width: 100% !important;
+}
+
+.sidebar-see-all-wiki-pages {
+  padding: 0px !important;
+}
+
+.sidebar-party-members .game-master .small-3 {
+  max-width: 50px;
+}
+
+.sidebar-party-members .player-characters .player {
+  clear: none;
+  max-width: 70px;
+  max-height: 60px;
+  padding-bottom: 0.625em;
+}
+
+.sidebar-last-updated .updated-by-container .when .time {
+  padding-top: 0px;
+}
+
+.recent-updates .recent-update .avatar {
+  max-width: 80px;
+}
+
+
+@media screen and (min-width: 1140px) {
+  .campaign-public-layout #sidebar {
+    min-width: 250px;
+    padding-top: 0.9375em;
+    padding-left: 0em;
+    margin-top: 0em;
+  }
+}
+
+@media screen and (max-width: 1139px) and (min-width: 941px) {
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0px;
+  }
+
+  .campaign-public-layout #sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .campaign-public-layout #sidebar .sidebar-party-members {
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .campaign-public-layout #sidebar #campaign-quick-stats {
+    width: 49%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0px;
+  }
+
+  .campaign-public-layout #sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .campaign-public-layout #sidebar .sidebar-party-members {
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .campaign-public-layout #sidebar #campaign-quick-stats {
+    width: 49%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .campaign-public-layout {
+    background-color: var(--main-bg-color);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .campaign-public-layout #sidebar {
+    display: block;
+  }
+
+  .campaign-public-layout #sidebar .sidebar-party-members,
+  .campaign-public-layout #sidebar #campaign-quick-stats {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
