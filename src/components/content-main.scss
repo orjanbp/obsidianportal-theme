@@ -62,7 +62,7 @@
   character description, if those aren't wanted.
 */
 .main-content-container div[itemprop='text'] > h6 {
-  display: none;
+  display: var(--character-desc-bio-heading-display);
 }
 
 /**

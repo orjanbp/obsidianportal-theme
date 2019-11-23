@@ -170,7 +170,7 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   padding-top: 32px;
 }
 .main-content-container div[itemprop=text] > h6 {
-  display: none;
+  display: var(--character-desc-bio-heading-display);
 }
 .right-side-fade-out {
   background: -moz-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
