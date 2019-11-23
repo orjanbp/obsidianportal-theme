@@ -1,0 +1,51 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [Unreleased]
+
+## [0.10.0] - 2019-11-22
+
+### Added
+
+- Start keeping a proper changelog.
+
+- Add CSS linting with Prettier.
+
+- Add an option to have the page contents only stretch out to a given max width. This is separate from the same option giving in Obsidian Portal, as this one entirely overrides it (the default is 100%).
+
+- Allow the background image to fade into the background colour.
+
+### Changed
+
+- Update Gulp to v4 and completely redo build procedure.
+
+- Split components in a more granular SASS structure, with one file per component.
+
+- Change heading font sizes.
+
+- Add extra padding on the character list, and make the description fadeout follow custom background colour.
+
+- Fix main-content width on edit pages.
+
+
+## [0.9.0] - 2019-11-22
+
+*Returning to continue project for use with new Obsidian Portal sites.*
+
+### Added
+
+- Add a dark mode theme. Currently, this is the main theme being worked on.
+
+- Add a set of CSS variables, to allow theming to be done just by changing these.
+
+
+## [0.8.0] - 2018-07-21
+
+*Initial development start.*
+
+### Added
+
+- Gulp pipeline to build CSS from collection of SASS files.
