@@ -166,6 +166,9 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   padding-left: .9375em;
   padding-right: .9375em;
 }
+.main-content-container .character-list ~ .character-list {
+  padding-top: 32px;
+}
 .main-content-container div[itemprop=text] > h6 {
   display: none;
 }

@@ -53,6 +53,14 @@
   padding-right: 0.9375em;
 }
 
+.main-content-container .character-list ~ .character-list {
+  padding-top: 32px;
+}
+
+/**
+  Allow removing the "Description:" and "Bio:" tags in the
+  character description, if those aren't wanted.
+*/
 .main-content-container div[itemprop='text'] > h6 {
   display: none;
 }
