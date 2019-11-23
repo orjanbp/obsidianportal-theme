@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add an option to disable the "Description:" and "Bio:" h6 headings on the character profiles. Personal opinion, not a fan of them.
 
+### Removed
+
+- Remove the extra space above the page title on character wiki pages, to be in line with doing the same on other wiki pages. 
+
 ## [0.10.0] - 2019-11-22
 
 ### Added

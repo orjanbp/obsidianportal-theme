@@ -86,6 +86,7 @@ ul.as-selections li.as-selection-item {
   margin-bottom: 4px;
   padding-bottom: 4px;
 }
+.campaign-public-layout .main-content h2.character-name,
 .campaign-public-layout .main-content h2.title-edit,
 .campaign-public-layout .main-content h2.wiki-page-name {
   margin-top: 0;
