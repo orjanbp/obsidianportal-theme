@@ -74,6 +74,32 @@ body.campaign-public-layout .post-section.post-main,
   color: var(--text-color-body);
 }
 
+/**
+  Styles to make tables follow theming.
+*/
+table {
+  border-color: var(--bottom-line-color);
+  background: var(--content-bg-dark);
+}
+
+table tr th {
+  color: var(--text-color-big);
+}
+
+table tr td {
+  color: var(--text-color-body);
+}
+
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(2n) {
+  background: var(--content-bg-light);
+}
+
+/**
+  Fix up background on GM only section, and add an
+  opacity var to reduce the visibility of it if needed.
+*/
 .character-show .main-content #gm-secrets,
 .item-show .main-content #gm-secrets,
 .campaign-public-layout .post-section.post-gm-only {

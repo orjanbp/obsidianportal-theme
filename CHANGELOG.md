@@ -14,6 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add extra option to fade out the GM Only section, to better distinguish it from the rest of the page contents.
 
+- Add theming styles for tables. 
+
 ### Changed
 
 - Make labels on character edit page form follow theme colours, and add extra spacing so they don't hug the form too tight.
