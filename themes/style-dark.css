@@ -79,6 +79,10 @@ body.campaign-public-layout .post-section.post-main {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
+.character-show .main-content #gm-secrets,
+.item-show .main-content #gm-secrets {
+  background: 0 0;
+}
 ul.as-selections li.as-selection-item {
   color: #333;
 }
