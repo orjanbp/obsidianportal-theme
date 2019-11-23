@@ -75,6 +75,52 @@ body.campaign-public-layout .post-section.post-main,
 }
 
 /**
+  Recolour the borders at the bottom of headings
+  to fit with the theming.
+*/
+.campaign-public-layout .main-content h2,
+.wiki-page div[itemprop='text'] h2,
+.gm-only-header.title,
+.post-gm-only .title,
+.character-show .main-content section .title,
+.item-show .main-content section .title .post-gm-only .gm-only-header.title,
+.post-gm-only .title,
+#gm-secrets .gm-only-header.title,
+#gm-secrets .title,
+.secret-section .gm-only-header.title,
+.secret-section .title {
+  border-bottom: 1px solid var(--bottom-line-color) !important;
+}
+
+/**
+  For better readability, this will make the h2 heading
+  have a line below and a gap above. That'll allow us to better
+  separate content on a wiki page by using h2 headings.
+*/
+.campaign-public-layout .main-content h2,
+.wiki-page div[itemprop='text'] h2,
+.gm-only-header.title,
+.post-gm-only .title {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+
+/**
+  Some page headings use a h2 at the top of the page, so let's
+  reset that height for them.
+*/
+.campaign-public-layout .main-content h2.wiki-page-name,
+.campaign-public-layout .main-content h2.title-edit,
+.campaign-public-layout .main-content h2.character-name {
+  margin-top: 0px;
+}
+
+body.campaign-public-layout .title ~ div[itemprop='text'] {
+  margin-top: 24px;
+}
+
+/**
   Styles to make tables follow theming.
 */
 table {
@@ -109,35 +155,6 @@ table tr:nth-of-type(2n) {
 
 ul.as-selections li.as-selection-item {
   color: #333;
-}
-
-/**
-  For better readability, this will make the h2 heading
-  have a line below and a gap above. That'll allow us to better
-  separate content on a wiki page by using h2 headings.
-*/
-.campaign-public-layout .main-content h2,
-.wiki-page div[itemprop='text'] h2,
-.gm-only-header.title,
-.post-gm-only .title {
-  border-bottom: 1px solid var(--bottom-line-color);
-  margin-top: 32px;
-  margin-bottom: 4px;
-  padding-bottom: 4px;
-}
-
-/**
-  Some page headings use a h2 at the top of the page, so let's
-  reset that height for them.
-*/
-.campaign-public-layout .main-content h2.wiki-page-name,
-.campaign-public-layout .main-content h2.title-edit,
-.campaign-public-layout .main-content h2.character-name {
-  margin-top: 0px;
-}
-
-body.campaign-public-layout .title ~ div[itemprop='text'] {
-  margin-top: 24px;
 }
 
 .social-share-button {
