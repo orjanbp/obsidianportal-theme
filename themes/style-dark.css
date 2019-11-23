@@ -13,6 +13,7 @@
   --sidebar-gradient-top: #292929;
   --sidebar-gradient-bottom: #161617;
   --character-desc-bio-heading-display: none;
+  --gm-secrets-display-opacity: 0.7;
 }
 p {
   font-size: .875em;
@@ -79,9 +80,11 @@ body.campaign-public-layout .post-section.post-main {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
+.campaign-public-layout .post-section.post-gm-only,
 .character-show .main-content #gm-secrets,
 .item-show .main-content #gm-secrets {
   background: 0 0;
+  opacity: var(--gm-secrets-display-opacity);
 }
 ul.as-selections li.as-selection-item {
   color: #333;

@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add extra space between the PC and NPC characters on the Characters page.
 
+- Add extra option to fade out the GM Only section, to better distinguish it from the rest of the page contents.
+
 ### Changed
 
 - Make labels on character edit page form follow theme colours, and add extra spacing so they don't hug the form too tight.
