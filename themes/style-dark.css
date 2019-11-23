@@ -149,6 +149,17 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   padding-left: 16px;
   padding-right: 16px;
 }
+.main-content-container .character-list {
+  padding-left: .9375em;
+  padding-right: .9375em;
+}
+.right-side-fade-out {
+  background: -moz-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
+  background: -webkit-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
+  background: -o-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
+  background: -ms-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
+  background: linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
+}
 @media screen and (min-width:1140px) {
   .collapsable-nav-row {
     display: flex;

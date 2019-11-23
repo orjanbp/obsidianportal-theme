@@ -35,6 +35,37 @@
 }
 
 /**
+  Add a padding to items on the Character List, so that they
+  don't hug the edges of the frame they're in.
+*/
+.main-content-container .character-list {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+
+/**
+  Make the fadeout gradient on the Character List items use the
+  body background colour.
+*/
+.right-side-fade-out {
+  background: -moz-linear-gradient(to right,
+      rgba(0,0,0,0) 0%,
+      var(--content-bg-light) 100%) !important;
+  background: -webkit-linear-gradient(to right,
+      rgba(0,0,0,0) 0%,
+      var(--content-bg-light) 100%) !important;
+  background: -o-linear-gradient(to right,
+      rgba(0,0,0,0) 0%,
+      var(--content-bg-light) 100%) !important;
+  background: -ms-linear-gradient(to right,
+      rgba(0,0,0,0) 0%,
+      var(--content-bg-light) 100%) !important;
+  background: linear-gradient(to right,
+      rgba(0,0,0,0) 0%,
+      var(--content-bg-light) 100%) !important;
+}
+
+/**
   For Extra Large screens
 */
 
