@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Add an option to disable the "Description:" and "Bio:" h6 headings on the character profiles. Personal opinion, not a fan of them.
+
 ## [0.10.0] - 2019-11-22
 
 ### Added
@@ -30,10 +34,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Fix main-content width on edit pages.
 
-
 ## [0.9.0] - 2019-11-22
 
-*Returning to continue project for use with new Obsidian Portal sites.*
+_Returning to continue project for use with new Obsidian Portal sites._
 
 ### Added
 
@@ -41,10 +44,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add a set of CSS variables, to allow theming to be done just by changing these.
 
-
 ## [0.8.0] - 2018-07-21
 
-*Initial development start.*
+_Initial development start._
 
 ### Added
 

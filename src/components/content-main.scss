@@ -53,6 +53,10 @@
   padding-right: 0.9375em;
 }
 
+.main-content-container div[itemprop='text'] > h6 {
+  display: none;
+}
+
 /**
   Make the fadeout gradient on the Character List items use the
   body background colour.

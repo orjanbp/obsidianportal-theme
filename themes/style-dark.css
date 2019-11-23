@@ -12,6 +12,7 @@
   --bottom-line-color: #686868;
   --sidebar-gradient-top: #292929;
   --sidebar-gradient-bottom: #161617;
+  --character-desc-bio-heading-display: none;
 }
 p {
   font-size: .875em;
@@ -158,6 +159,9 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 .main-content-container .character-list {
   padding-left: .9375em;
   padding-right: .9375em;
+}
+.main-content-container div[itemprop=text] > h6 {
+  display: none;
 }
 .right-side-fade-out {
   background: -moz-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
