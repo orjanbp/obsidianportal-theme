@@ -35,6 +35,16 @@
 }
 
 /**
+  On pages that don't have a right-hand sidebar, make the
+  main content expand to fill the whole width.
+*/
+.characters-edit .collapsable-nav-row .main-content-container,
+.wiki-pages-edit .collapsable-nav-row .main-content-container {
+  width: 100%;
+  padding-right: 0px;
+}
+
+/**
   Add a padding to items on the Character List, so that they
   don't hug the edges of the frame they're in.
 */
@@ -48,21 +58,31 @@
   body background colour.
 */
 .right-side-fade-out {
-  background: -moz-linear-gradient(to right,
-      rgba(0,0,0,0) 0%,
-      var(--content-bg-light) 100%) !important;
-  background: -webkit-linear-gradient(to right,
-      rgba(0,0,0,0) 0%,
-      var(--content-bg-light) 100%) !important;
-  background: -o-linear-gradient(to right,
-      rgba(0,0,0,0) 0%,
-      var(--content-bg-light) 100%) !important;
-  background: -ms-linear-gradient(to right,
-      rgba(0,0,0,0) 0%,
-      var(--content-bg-light) 100%) !important;
-  background: linear-gradient(to right,
-      rgba(0,0,0,0) 0%,
-      var(--content-bg-light) 100%) !important;
+  background: -moz-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  ) !important;
+  background: -o-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  ) !important;
+  background: -ms-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  ) !important;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  ) !important;
 }
 
 /**
@@ -90,6 +110,11 @@
     width: auto;
     margin-left: 160px;
   }
+
+  .characters-edit .collapsable-nav-row .main-content-container,
+  .wiki-pages-edit .collapsable-nav-row .main-content-container {
+    width: calc(100% - 160px);
+  }
 }
 
 /**
@@ -113,5 +138,10 @@
     float: none;
     padding: 0px;
     width: 100%;
+  }
+
+  .characters-edit .collapsable-nav-row .main-content-container,
+  .wiki-pages-edit .collapsable-nav-row .main-content-container {
+    padding-left: 0px;
   }
 }

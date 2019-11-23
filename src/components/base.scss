@@ -72,6 +72,11 @@ ul.as-selections li.as-selection-item {
   color: #333;
 }
 
+/**
+  For better readability, this will make the h2 heading
+  have a line below and a gap above. That'll allow us to better
+  separate content on a wiki page by using h2 headings.
+*/
 .campaign-public-layout .main-content h2,
 .wiki-page div[itemprop='text'] h2,
 .gm-only-header.title,
@@ -82,7 +87,12 @@ ul.as-selections li.as-selection-item {
   padding-bottom: 4px;
 }
 
-.campaign-public-layout .main-content h2.wiki-page-name {
+/**
+  Some page headings use a h2 at the top of the page, so let's
+  reset that height for them.
+*/
+.campaign-public-layout .main-content h2.wiki-page-name,
+.campaign-public-layout .main-content h2.title-edit {
   margin-top: 0px;
 }
 

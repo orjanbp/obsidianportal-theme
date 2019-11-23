@@ -85,6 +85,7 @@ ul.as-selections li.as-selection-item {
   margin-bottom: 4px;
   padding-bottom: 4px;
 }
+.campaign-public-layout .main-content h2.title-edit,
 .campaign-public-layout .main-content h2.wiki-page-name {
   margin-top: 0;
 }
@@ -149,6 +150,11 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
   padding-left: 16px;
   padding-right: 16px;
 }
+.characters-edit .collapsable-nav-row .main-content-container,
+.wiki-pages-edit .collapsable-nav-row .main-content-container {
+  width: 100%;
+  padding-right: 0;
+}
 .main-content-container .character-list {
   padding-left: .9375em;
   padding-right: .9375em;
@@ -175,6 +181,10 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
     width: auto;
     margin-left: 160px;
   }
+  .characters-edit .collapsable-nav-row .main-content-container,
+  .wiki-pages-edit .collapsable-nav-row .main-content-container {
+    width: calc(100% - 160px);
+  }
 }
 @media screen and (max-width:940px) {
   .collapsable-nav-row {
@@ -189,6 +199,10 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
     float: none;
     padding: 0;
     width: 100%;
+  }
+  .characters-edit .collapsable-nav-row .main-content-container,
+  .wiki-pages-edit .collapsable-nav-row .main-content-container {
+    padding-left: 0;
   }
 }
 .collapsable-nav-row .front-nav-container {
