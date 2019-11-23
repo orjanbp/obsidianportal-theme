@@ -31,6 +31,11 @@ p {
 .campaign-public-layout #sidebar {
   color: var(--text-color-body);
 }
+.campaign-public-layout .main-content-container label {
+  color: var(--text-color-body);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
 .op-icon-gm,
 .preview-content h2,
 .preview-content h3,

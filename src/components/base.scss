@@ -23,6 +23,12 @@ p {
   color: var(--text-color-body);
 }
 
+.campaign-public-layout .main-content-container label {
+  color: var(--text-color-body);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
 .preview-contnet h1,
 .preview-content h2,
 .preview-content h3,
