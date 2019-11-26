@@ -14,7 +14,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add extra option to fade out the GM Only section, to better distinguish it from the rest of the page contents.
 
-- Add theming styles for tables. 
+- Add theming styles for tables.
+
+- Add theming styles for the Adventure Log.
 
 ### Changed
 
@@ -29,6 +31,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Remove the extra space above the page title on character wiki pages, to be in line with doing the same on other wiki pages.
 
 - Remove added background colouring on GM secrets section on wiki pages, as this conflicts with the page colour theming.
+
+- Remove added BG colouring on the whole main-content column, so different sections (main text, GM Only text, comments) can be separate.
 
 ## [0.10.0] - 2019-11-22
 

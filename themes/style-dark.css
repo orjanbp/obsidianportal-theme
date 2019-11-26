@@ -6,6 +6,8 @@
   --title-font-size: 2.5rem;
   --content-bg-dark: #161617;
   --content-bg-light: #1f2022;
+  --content-bg-accent-1: #212325;
+  --content-bg-accent-2: #242628;
   --text-color-big: #fff;
   --text-color-body: #C0C0C0;
   --text-color-soft: #868686;
@@ -50,11 +52,13 @@ input[type=text]::placeholder,
 textarea::placeholder {
   color: var(--text-color-soft);
 }
+.campaign-public-layout .main-content {
+  background: 0 0;
+}
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-maps-new .secret-sections > section,
 .campaign-maps-new section.main-section,
 .campaign-public-layout #sidebar .module,
-.campaign-public-layout .main-content,
 .campaign-public-layout.characters-edit .secret-sections > section,
 .campaign-public-layout.characters-edit section.main-section,
 .campaign-public-layout.items-edit .secret-sections > section,
@@ -80,6 +84,28 @@ body.campaign-public-layout .post-section.post-main {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
+.adventure-log-index .adventure-log-post,
+.adventure-log-show .post-comments,
+.adventure-log-show .post-header-container {
+  background: var(--content-bg-light);
+  color: var(--text-color-body);
+}
+.adventure-log-index .post-date,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-accent-1);
+}
+.adventure-log-index .adventure-log-new-container,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active {
+  background-color: var(--content-bg-accent-2);
+}
+.adventure-log-index .overflow-fade-out {
+  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+}
 #gm-secrets .gm-only-header.title,
 #gm-secrets .title,
 .campaign-public-layout .main-content h2,
@@ -100,9 +126,11 @@ body.campaign-public-layout .post-section.post-main {
   margin-bottom: 10px;
   padding-bottom: 2px;
 }
+.campaign-public-layout .main-content h2.adventure-log-post-title,
 .campaign-public-layout .main-content h2.character-name,
 .campaign-public-layout .main-content h2.title-edit,
-.campaign-public-layout .main-content h2.wiki-page-name {
+.campaign-public-layout .main-content h2.wiki-page-name,
+.campaign-public-layout .main-content h4.gm-only-header.title {
   margin-top: 0;
 }
 body.campaign-public-layout .title ~ div[itemprop=text] {
