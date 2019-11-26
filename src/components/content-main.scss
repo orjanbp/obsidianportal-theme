@@ -1,50 +1,10 @@
 /**
-  Heading style for the campaign body element. Everything
-  that is part of the pag emain content is under
-  .collapsable-nav-row
+  This file contains fixes and overides for items in the
+  .main-content-container column of the page layout.
 */
-
-/** Styles for the body element, which has the given
-  class '.campaign-public-layout'.
-*/
-
-.campaign-public-layout {
-  background-color: var(--sidebar-gradient-bottom);
-}
-
-.campaign-public-layout #content {
-  width: 100%;
-  max-width: 100%;
-}
 
 /**
-  Styles for the main body, that contains the sidebars and
-  the main center content.
-*/
-
-.collapsable-nav-row {
-  position: relative;
-  background-color: var(--content-bg-dark);
-  max-width: var(--content-max-width);
-  padding: 16px;
-}
-
-.collapsable-nav-row .main-content-container {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-/**
-  On pages that don't have a right-hand sidebar, make the
-  main content expand to fill the whole width.
-*/
-.characters-edit .collapsable-nav-row .main-content-container,
-.wiki-pages-edit .collapsable-nav-row .main-content-container {
-  width: 100%;
-  padding-right: 0px;
-}
-
-/**
+  CHARACTER LIST
   Add a padding to items on the Character List, so that they
   don't hug the edges of the frame they're in.
 */
@@ -53,22 +13,20 @@
   padding-right: 0.9375em;
 }
 
+/**
+  CHARACTER LIST
+  Add a more prominent divide between PC and NPC characters
+  on the player list.
+*/
 .main-content-container .character-list ~ .character-list {
   padding-top: 32px;
 }
 
 /**
-  Allow removing the "Description:" and "Bio:" tags in the
-  character description, if those aren't wanted.
-*/
-.main-content-container div[itemprop='text'] > h6 {
-  display: var(--character-desc-bio-heading-display);
-}
-
-/**
+  CHARACTER LIST
   Make the fadeout gradient on the Character List items use the
   body background colour.
-*/
+  */
 .right-side-fade-out {
   background: -moz-linear-gradient(
     to right,
@@ -98,62 +56,10 @@
 }
 
 /**
-  For Extra Large screens
-*/
-
-@media screen and (min-width: 1140px) {
-  .collapsable-nav-row {
-    display: flex;
-  }
-
-  .collapsable-nav-row .main-content-container {
-    width: 100%;
-    padding-top: 0px;
-  }
-}
-
-/**
-  For Large screens
-*/
-
-@media screen and (max-width: 1139px) and (min-width: 941px) {
-  .collapsable-nav-row .main-content-container {
-    float: none;
-    width: auto;
-    margin-left: 160px;
-  }
-
-  .characters-edit .collapsable-nav-row .main-content-container,
-  .wiki-pages-edit .collapsable-nav-row .main-content-container {
-    width: calc(100% - 160px);
-  }
-}
-
-/**
-  For Medium / Tablet screens and down. There's an issue at this
-  size with how we've moved things to the bottom of the page, so we
-  need to restate the main content width.
-*/
-
-@media screen and (max-width: 940px) {
-  .collapsable-nav-row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .collapsable-nav-row .front-nav-container {
-    display: none !important;
-  }
-
-  .collapsable-nav-row .main-content-container {
-    position: relative;
-    float: none;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .characters-edit .collapsable-nav-row .main-content-container,
-  .wiki-pages-edit .collapsable-nav-row .main-content-container {
-    padding-left: 0px;
-  }
+  CHARACTER PAGE
+  Allow removing the "Description:" and "Bio:" tags in the
+  character description, if those aren't wanted.
+  */
+.main-content-container div[itemprop='text'] > h6 {
+  display: var(--character-desc-bio-heading-display);
 }

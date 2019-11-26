@@ -1,0 +1,52 @@
+/**
+  Left sidebar gradient
+*/
+.collapsable-nav-row .front-nav-container {
+  background: -moz-linear-gradient(
+    to bottom,
+    var(--sidebar-gradient-top) 0%,
+    var(--sidebar-gradient-bottom) 100%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    var(--sidebar-gradient-top) 0%,
+    var(--sidebar-gradient-bottom) 100%
+  );
+  background: -o-linear-gradient(
+    to bottom,
+    var(--sidebar-gradient-top) 0%,
+    var(--sidebar-gradient-bottom) 100%
+  );
+  background: -ms-linear-gradient(
+    to bottom,
+    var(--sidebar-gradient-top) 0%,
+    var(--sidebar-gradient-bottom) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--sidebar-gradient-top) 0%,
+    var(--sidebar-gradient-bottom) 100%
+  );
+  padding-top: 0.9375em;
+}
+
+/**
+  Left sidebar nav buttons
+*/
+
+.campaign-public-layout #campaign-nav {
+  background: none;
+}
+
+.campaign-public-layout #campaign-nav .icon {
+  background: none;
+}
+
+.campaign-public-layout #campaign-nav li {
+  opacity: 0.6;
+  font-weight: normal;
+}
+
+.campaign-public-layout #campaign-nav li.active {
+  opacity: 1;
+}
