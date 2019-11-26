@@ -72,7 +72,10 @@ body.campaign-public-layout .post-section.post-main,
 .item-index.campaign-public-layout .character-quick-search,
 .item-index.campaign-public-layout .filter-options,
 .item-show .main-content section,
-.sidebar-last-updated {
+.sidebar-last-updated,
+.character-show .main-content #gm-secrets,
+.item-show .main-content #gm-secrets,
+.campaign-public-layout .post-section.post-gm-only {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
@@ -160,17 +163,26 @@ body.campaign-public-layout .post-section.post-main,
 }
 
 /**
-  Some page headings use a h2 at the top of the page, so let's
-  reset that height for them.
+  We need to make some heading adjustments for the top heading
+  on different pages. Partly to clear the h2 spacing for the
+  topmost page header, and partly because the GM Only header
+  needs a little more breathing room.
 */
 .campaign-public-layout .main-content h2.wiki-page-name,
 .campaign-public-layout .main-content h2.title-edit,
 .campaign-public-layout .main-content h2.character-name,
-.campaign-public-layout .main-content h2.adventure-log-post-title,
-.campaign-public-layout .main-content h4.gm-only-header.title {
+.campaign-public-layout .main-content h2.adventure-log-post-title {
   margin-top: 0px;
 }
 
+.campaign-public-layout .main-content h4.gm-only-header.title {
+  margin-top: 8px;
+}
+
+/**
+  Add a little extra space between the title of a page and the
+  text following on after.
+*/
 body.campaign-public-layout .title ~ div[itemprop='text'] {
   margin-top: 24px;
 }
@@ -195,17 +207,6 @@ table tr.even,
 table tr.alt,
 table tr:nth-of-type(2n) {
   background: var(--content-bg-light);
-}
-
-/**
-  Fix up background on GM only section, and add an
-  opacity var to reduce the visibility of it if needed.
-*/
-.character-show .main-content #gm-secrets,
-.item-show .main-content #gm-secrets,
-.campaign-public-layout .post-section.post-gm-only {
-  background: none;
-  opacity: var(--gm-secrets-display-opacity);
 }
 
 ul.as-selections li.as-selection-item {

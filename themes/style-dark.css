@@ -15,7 +15,6 @@
   --sidebar-gradient-top: #292929;
   --sidebar-gradient-bottom: #161617;
   --character-desc-bio-heading-display: none;
-  --gm-secrets-display-opacity: 0.8;
 }
 p {
   font-size: .875em;
@@ -59,6 +58,7 @@ textarea::placeholder {
 .campaign-maps-new .secret-sections > section,
 .campaign-maps-new section.main-section,
 .campaign-public-layout #sidebar .module,
+.campaign-public-layout .post-section.post-gm-only,
 .campaign-public-layout.characters-edit .secret-sections > section,
 .campaign-public-layout.characters-edit section.main-section,
 .campaign-public-layout.items-edit .secret-sections > section,
@@ -71,12 +71,14 @@ textarea::placeholder {
 .character-index.campaign-public-layout .character-list-item,
 .character-index.campaign-public-layout .character-quick-search,
 .character-index.campaign-public-layout .filter-options,
+.character-show .main-content #gm-secrets,
 .character-show .main-content section,
 .event-edit .secret-sections > section,
 .event-edit section.main-section,
 .item-index.campaign-public-layout .character-list-item,
 .item-index.campaign-public-layout .character-quick-search,
 .item-index.campaign-public-layout .filter-options,
+.item-show .main-content #gm-secrets,
 .item-show .main-content section,
 .sidebar-last-updated,
 body.campaign-public-layout .post-section.post-gm-only,
@@ -129,9 +131,11 @@ body.campaign-public-layout .post-section.post-main {
 .campaign-public-layout .main-content h2.adventure-log-post-title,
 .campaign-public-layout .main-content h2.character-name,
 .campaign-public-layout .main-content h2.title-edit,
-.campaign-public-layout .main-content h2.wiki-page-name,
-.campaign-public-layout .main-content h4.gm-only-header.title {
+.campaign-public-layout .main-content h2.wiki-page-name {
   margin-top: 0;
+}
+.campaign-public-layout .main-content h4.gm-only-header.title {
+  margin-top: 8px;
 }
 body.campaign-public-layout .title ~ div[itemprop=text] {
   margin-top: 24px;
@@ -150,12 +154,6 @@ table tr.alt,
 table tr.even,
 table tr:nth-of-type(2n) {
   background: var(--content-bg-light);
-}
-.campaign-public-layout .post-section.post-gm-only,
-.character-show .main-content #gm-secrets,
-.item-show .main-content #gm-secrets {
-  background: 0 0;
-  opacity: var(--gm-secrets-display-opacity);
 }
 ul.as-selections li.as-selection-item {
   color: #333;

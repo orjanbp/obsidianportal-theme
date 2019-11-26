@@ -12,8 +12,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Add extra space between the PC and NPC characters on the Characters page.
 
-- Add extra option to fade out the GM Only section, to better distinguish it from the rest of the page contents.
-
 - Add theming styles for tables.
 
 - Add theming styles for the Adventure Log.
@@ -25,6 +23,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Adjust spacing below h2 bottom borders on page headings.
 
 - Make all heading bottom-borders follow theme styles.
+
+- Fixed background styling on the GM Only section.
 
 ### Removed
 
