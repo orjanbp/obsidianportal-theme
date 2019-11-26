@@ -217,6 +217,11 @@ table tr:nth-of-type(2n) {
   width: auto;
   padding: 0;
 }
+.collapsable-nav-row .main-content-container.full-width {
+  float: none;
+  width: calc(100% - 176px);
+  padding: 0;
+}
 .collapsable-nav-row .sidebar {
   width: 260px;
   flex-shrink: 0;
@@ -244,9 +249,12 @@ table tr:nth-of-type(2n) {
   }
 }
 @media screen and (max-width:769px) {
-  .campaign-public-layout .collapsable-nav-row {
+  .collapsable-nav-row .main-content-container,
+  .collapsable-nav-row .main-content-container.full-width,
+  .collapsable-nav-row .sidebar {
     display: block;
-    grid-template-areas: none;
+    width: 100%;
+    margin: 0;
   }
 }
 .main-content-container .character-list {
