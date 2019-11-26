@@ -1,0 +1,21 @@
+/**
+  Styles to make tables follow theming.
+*/
+table {
+  border-color: var(--bottom-line-color);
+  background: var(--content-bg-dark);
+}
+
+table tr th {
+  color: var(--text-color-big);
+}
+
+table tr td {
+  color: var(--text-color-body);
+}
+
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(2n) {
+  background: var(--content-bg-light);
+}

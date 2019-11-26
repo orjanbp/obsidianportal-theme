@@ -44,10 +44,6 @@ textarea::placeholder {
   color: var(--text-color-soft);
 }
 
-.campaign-public-layout .main-content {
-  background: none;
-}
-
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-maps-new .secret-sections > section,
 .campaign-maps-new section.main-section,
@@ -187,28 +183,6 @@ body.campaign-public-layout .post-section.post-main,
 */
 body.campaign-public-layout .title ~ div[itemprop='text'] {
   margin-top: 24px;
-}
-
-/**
-  Styles to make tables follow theming.
-*/
-table {
-  border-color: var(--bottom-line-color);
-  background: var(--content-bg-dark);
-}
-
-table tr th {
-  color: var(--text-color-big);
-}
-
-table tr td {
-  color: var(--text-color-body);
-}
-
-table tr.even,
-table tr.alt,
-table tr:nth-of-type(2n) {
-  background: var(--content-bg-light);
 }
 
 ul.as-selections li.as-selection-item {
