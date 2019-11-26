@@ -27,39 +27,31 @@
 */
 
 .campaign-public-layout .collapsable-nav-row {
-  display: grid;
+  display: flex;
   background-color: var(--content-bg-dark);
   max-width: var(--content-max-width);
   padding: 16px;
-  grid-gap: 16px;
-  grid-template-columns: 160px auto 260px;
-  grid-template-areas: 'navArea mainArea sidebarArea';
-}
-.collapsable-nav-row::after {
-  display: none;
 }
 
 /**
-  Override width and padding of grid-area items, so they'll
-  fill their respective grid areas, and assign them to an
-  area.
+  Arrange the three columns in the flex-area.
 */
 .collapsable-nav-row .front-nav-container {
-  grid-area: navArea;
-  width: 100%;
-  padding: 0px;
+  width: 160px;
+  flex-shrink: 0;
+  margin-right: 16px;
 }
 
 .collapsable-nav-row .main-content-container {
-  grid-area: mainArea;
-  width: 100%;
+  width: auto;
   padding: 0px;
 }
 
 .collapsable-nav-row .sidebar {
-  grid-area: sidebarArea;
-  width: 100%;
+  width: 260px;
+  flex-shrink: 0;
   padding: 0px;
+  margin-left: 16px;
 }
 
 /**
@@ -73,15 +65,23 @@
 /**
   MEDIUM-LARGE SCREENS
   Knock the right-hand sidebar to the bottom of the page, but make
-  the left-hand nav stretch all the way to the botto mof the pa
+  the left-hand nav stretch all the way to the bottom of the page.
 */
 
 @media screen and (max-width: 1139px) {
   .campaign-public-layout .collapsable-nav-row {
-    grid-template-columns: 160px auto;
-    grid-template-areas:
-      'navArea mainArea'
-      'navArea sidebarArea';
+    flex-wrap: wrap;
+  }
+
+  .collapsable-nav-row .front-nav-container {
+    position: absolute;
+    height: 100%;
+  }
+
+  .collapsable-nav-row .main-content-container,
+  .collapsable-nav-row .sidebar {
+    width: calc(100% - 176px);
+    margin-left: 176px;
   }
 
   .campaign-public-layout #campaign-footer {

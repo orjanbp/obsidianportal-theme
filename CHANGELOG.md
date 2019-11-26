@@ -18,10 +18,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Rebuild content SCSS file structure, separate Layout definitions from content definitions.
 
-- Rebuild the page layout override to use CSS Grid. This'll make it easier and more maintainable to reposition elements. Should be safe to use, for browser support (the worst support is on mobile, which doesn't use CSS grid with this theme). https://caniuse.com/#feat=css-grid
-
-- Rebuild right-hand sidebar on medium screens to use CSS grid.
-
 ## [0.11.0] - 2019-11-26
 
 ### Added
