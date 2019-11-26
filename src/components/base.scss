@@ -14,7 +14,8 @@ p {
 .campaign-public-layout .main-content h5,
 .campaign-public-layout .main-content h6,
 .character-index.campaign-public-layout .character-quick-search h4,
-.item-index.campaign-public-layout .character-quick-search h4 {
+.item-index.campaign-public-layout .character-quick-search h4,
+body.campaign-public-layout .title a {
   color: var(--text-color-big);
   border-bottom: none;
 }
@@ -75,7 +76,8 @@ body.campaign-public-layout .post-section.post-main,
 .sidebar-last-updated,
 .character-show .main-content #gm-secrets,
 .item-show .main-content #gm-secrets,
-.campaign-public-layout .post-section.post-gm-only {
+.campaign-public-layout .post-section.post-gm-only,
+.campaign-map-index .map-placard {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
@@ -211,8 +213,4 @@ table tr:nth-of-type(2n) {
 
 ul.as-selections li.as-selection-item {
   color: #333;
-}
-
-.social-share-button {
-  display: none;
 }
