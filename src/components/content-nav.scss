@@ -1,4 +1,24 @@
 /**
+  This file contains all styling for the left-hand
+  nav sidebar.
+*/
+
+
+/**
+  Change styling for the sidebar, to fill out
+  the button space more properly.
+*/
+.collapsable-nav-row .front-nav-container {
+  padding: 16px 0px 0px;
+}
+.collapsable-nav-row .front-nav-container nav {
+  width: 100%;
+}
+.collapsable-nav-row .front-nav-container nav li {
+  padding-left: 16px;
+}
+
+/**
   Left sidebar gradient
 */
 .collapsable-nav-row .front-nav-container {

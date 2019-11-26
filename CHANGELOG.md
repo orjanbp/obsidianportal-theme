@@ -18,6 +18,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Rebuild content SCSS file structure, separate Layout definitions from content definitions.
 
+- Make left sidebar nav buttons fill out their space.
+
 ## [0.11.0] - 2019-11-26
 
 ### Added

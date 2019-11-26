@@ -275,6 +275,15 @@ table tr:nth-of-type(2n) {
   display: var(--character-desc-bio-heading-display);
 }
 .collapsable-nav-row .front-nav-container {
+  padding: 16px 0 0;
+}
+.collapsable-nav-row .front-nav-container nav {
+  width: 100%;
+}
+.collapsable-nav-row .front-nav-container nav li {
+  padding-left: 16px;
+}
+.collapsable-nav-row .front-nav-container {
   background: -moz-linear-gradient(to bottom,var(--sidebar-gradient-top) 0,var(--sidebar-gradient-bottom) 100%);
   background: -webkit-linear-gradient(to bottom,var(--sidebar-gradient-top) 0,var(--sidebar-gradient-bottom) 100%);
   background: -o-linear-gradient(to bottom,var(--sidebar-gradient-top) 0,var(--sidebar-gradient-bottom) 100%);
