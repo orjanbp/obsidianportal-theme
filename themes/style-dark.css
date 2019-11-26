@@ -327,21 +327,26 @@ table tr:nth-of-type(2n) {
     display: none!important;
   }
 }
-.campaign-public-layout #campaign-footer .inline-list > li {
-  margin-left: .7em!important;
-}
-.campaign-landing-show .campaign-landing-page-container,
-.campaign-public-layout #sidebar .module,
-.sidebar-last-updated {
+.campaign-public-layout #sidebar .campaign-stream-module,
+.campaign-public-layout #sidebar .sidebar-last-updated,
+.campaign-public-layout #sidebar .sidebar-party-members,
+.campaign-public-layout #sidebar .sidebar-quick-stats {
   width: 100%;
   border: none;
-  padding: 8px;
+  padding: 16px;
   margin-bottom: 16px;
 }
-.comment-count-wrapper,
-.fan-count-wrapper,
+.sidebar-quick-stats .fan-counter-container {
+  margin-top: 16px;
+}
 .sidebar-party-members .game-master {
   background: 0 0;
+  border: none;
+  max-width: none;
+}
+.comment-count-wrapper,
+.fan-count-wrapper {
+  background: var(--content-bg-accent-2);
   border: none;
   max-width: none;
 }
@@ -365,6 +370,9 @@ table tr:nth-of-type(2n) {
 }
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+.campaign-public-layout #campaign-footer .inline-list > li {
+  margin-left: .7em!important;
 }
 @media screen and (min-width:1140px) {
   .campaign-public-layout #sidebar {

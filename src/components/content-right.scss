@@ -1,23 +1,38 @@
-.campaign-public-layout #campaign-footer .inline-list > li {
-  margin-left: 0.7em !important;
-}
-
-.campaign-landing-show .campaign-landing-page-container,
-.campaign-public-layout #sidebar .module,
-.sidebar-last-updated {
+/**
+  Add extra padding and shift margins on the right-hand
+  sidebar module elements.
+*/
+.campaign-public-layout #sidebar .sidebar-party-members,
+.campaign-public-layout #sidebar .sidebar-quick-stats,
+.campaign-public-layout #sidebar .sidebar-last-updated,
+.campaign-public-layout #sidebar .campaign-stream-module {
   width: 100%;
   border: none;
-  padding: 8px;
+  padding: 16px;
   margin-bottom: 16px;
 }
 
-.sidebar-party-members .game-master,
-.fan-count-wrapper,
-.comment-count-wrapper {
+.sidebar-quick-stats .fan-counter-container {
+  margin-top: 16px;
+}
+
+/**
+  Clean sidebar background styles
+*/
+
+.sidebar-party-members .game-master {
   background: none;
   border: none;
   max-width: none;
 }
+.fan-count-wrapper,
+.comment-count-wrapper {
+  background: var(--content-bg-accent-2);
+  border: none;
+  max-width: none;
+}
+
+
 
 .sidebar-last-updated {
   width: 100% !important;
@@ -44,6 +59,10 @@
 
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+
+.campaign-public-layout #campaign-footer .inline-list > li {
+  margin-left: 0.7em !important;
 }
 
 /**

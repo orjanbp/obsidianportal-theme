@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Put Table CSS in its own partial SCSS file.
 
+- Tidy right-hand sidebar module CSS.
+
 ## [0.11.0] - 2019-11-26
 
 ### Added
