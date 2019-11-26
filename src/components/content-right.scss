@@ -32,8 +32,6 @@
   max-width: none;
 }
 
-
-
 .sidebar-last-updated {
   width: 100% !important;
 }
@@ -62,13 +60,16 @@
 }
 
 
-
 .sidebar-last-updated .updated-by-container .when .time {
   padding-top: 0px;
 }
 
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+
+.campaign-public-layout .campaign-stream-module .summary {
+  font-size: 0.875em;
 }
 
 /**

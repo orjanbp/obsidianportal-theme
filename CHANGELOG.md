@@ -14,6 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Move footer CSS to Base SASS file.
 
+- Resize update stream module text.
+
 ## [0.11.0] - 2019-11-26
 
 ### Added

@@ -142,6 +142,9 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 ul.as-selections li.as-selection-item {
   color: #333;
 }
+.campaign-public-layout #campaign-footer .inline-list > li {
+  margin-left: .7em!important;
+}
 table {
   border-color: var(--bottom-line-color);
   background: var(--content-bg-dark);
@@ -371,8 +374,8 @@ table tr:nth-of-type(2n) {
 .recent-updates .recent-update .avatar {
   max-width: 80px;
 }
-.campaign-public-layout #campaign-footer .inline-list > li {
-  margin-left: .7em!important;
+.campaign-public-layout .campaign-stream-module .summary {
+  font-size: .875em;
 }
 @media screen and (min-width:1140px) {
   .campaign-public-layout #sidebar {
