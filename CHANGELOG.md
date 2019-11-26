@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Tidy right-hand sidebar module CSS.
 
+- Move footer CSS to Base SASS file.
+
 ## [0.11.0] - 2019-11-26
 
 ### Added

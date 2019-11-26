@@ -188,3 +188,11 @@ body.campaign-public-layout .title ~ div[itemprop='text'] {
 ul.as-selections li.as-selection-item {
   color: #333;
 }
+
+/**
+  Add spacing between footer links
+*/
+
+.campaign-public-layout #campaign-footer .inline-list > li {
+  margin-left: 0.7em !important;
+}

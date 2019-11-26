@@ -42,9 +42,17 @@
   padding: 0px !important;
 }
 
+/**
+  Shrink GM icon max size.
+*/
+
 .sidebar-party-members .game-master .small-3 {
   max-width: 50px;
 }
+
+/**
+  Tidy player icon sizes
+*/
 
 .sidebar-party-members .player-characters .player {
   clear: none;
@@ -53,16 +61,14 @@
   padding-bottom: 0.625em;
 }
 
+
+
 .sidebar-last-updated .updated-by-container .when .time {
   padding-top: 0px;
 }
 
 .recent-updates .recent-update .avatar {
   max-width: 80px;
-}
-
-.campaign-public-layout #campaign-footer .inline-list > li {
-  margin-left: 0.7em !important;
 }
 
 /**
