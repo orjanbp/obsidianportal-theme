@@ -20,6 +20,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Make left sidebar nav buttons fill out their space.
 
+- Ensure main content covers page width.
+
 ## [0.11.0] - 2019-11-26
 
 ### Added

@@ -214,7 +214,7 @@ table tr:nth-of-type(2n) {
   margin-right: 16px;
 }
 .collapsable-nav-row .main-content-container {
-  width: auto;
+  width: 100%;
   padding: 0;
 }
 .collapsable-nav-row .main-content-container.full-width {
