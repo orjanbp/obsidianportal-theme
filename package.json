@@ -4,7 +4,7 @@
   "description": "CSS styling for Obsidian Portal campaigns, to bring the campaign's frontpage and wiki more in line with other pages",
   "main": "index.js",
   "scripts": {
-    "compile": "gulp compile",
+    "compile": "rm ./themes/* && gulp compile",
     "watch": "gulp watch",
     "lint": "prettier --config ./.prettierrc.yaml --write src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"

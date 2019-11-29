@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Return to a horizontal layout on medium devices, by collapsing the left-hand nav sidebar to just the icons on these sizes. The nav still collapses to the hamburger menu on mobile.
+
 ### Changed
 
 - Put Table CSS in its own partial SCSS file.

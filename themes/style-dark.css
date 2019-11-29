@@ -19,6 +19,9 @@
 p {
   font-size: .875em;
 }
+.campaign-public-layout .campaign-stream-module .summary {
+  font-size: .875em;
+}
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3,
@@ -85,28 +88,6 @@ body.campaign-public-layout .post-section.post-main {
   background-color: var(--content-bg-light);
   color: var(--text-color-body);
 }
-.adventure-log-index .adventure-log-post,
-.adventure-log-show .post-comments,
-.adventure-log-show .post-header-container {
-  background: var(--content-bg-light);
-  color: var(--text-color-body);
-}
-.adventure-log-index .post-date,
-.adventure-log-show .post-date {
-  background-color: var(--content-bg-accent-1);
-}
-.adventure-log-index .adventure-log-new-container,
-.adventure-log-index-filter .filter-header,
-.adventure-log-index-filter ul .active {
-  background-color: var(--content-bg-accent-2);
-}
-.adventure-log-index .overflow-fade-out {
-  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-}
 #gm-secrets .gm-only-header.title,
 #gm-secrets .title,
 .campaign-public-layout .main-content h2,
@@ -141,6 +122,28 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 }
 ul.as-selections li.as-selection-item {
   color: #333;
+}
+.adventure-log-index .adventure-log-post,
+.adventure-log-show .post-comments,
+.adventure-log-show .post-header-container {
+  background: var(--content-bg-light);
+  color: var(--text-color-body);
+}
+.adventure-log-index .post-date,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-accent-1);
+}
+.adventure-log-index .adventure-log-new-container,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active {
+  background-color: var(--content-bg-accent-2);
+}
+.adventure-log-index .overflow-fade-out {
+  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
 }
 table {
   border-color: var(--bottom-line-color);
@@ -217,13 +220,8 @@ table tr:nth-of-type(2n) {
   width: 100%;
   padding: 0;
 }
-.collapsable-nav-row .main-content-container.full-width {
-  float: none;
-  width: calc(100% - 176px);
-  padding: 0;
-}
 .collapsable-nav-row .sidebar {
-  width: 260px;
+  width: 280px;
   flex-shrink: 0;
   padding: 0;
   margin-left: 16px;
@@ -232,29 +230,29 @@ table tr:nth-of-type(2n) {
   margin-left: .7em!important;
 }
 @media screen and (max-width:1139px) {
-  .campaign-public-layout .collapsable-nav-row {
-    flex-wrap: wrap;
-  }
   .collapsable-nav-row .front-nav-container {
-    position: absolute;
-    height: 100%;
+    width: 70px;
   }
-  .collapsable-nav-row .main-content-container,
+  .collapsable-nav-row .front-nav-container .nav-text {
+    display: none;
+  }
   .collapsable-nav-row .sidebar {
-    width: calc(100% - 176px);
-    margin-left: 176px;
-  }
-  .campaign-public-layout #campaign-footer {
-    margin-bottom: 0;
+    width: 220px;
   }
 }
 @media screen and (max-width:769px) {
+  .campaign-public-layout .collapsable-nav-row {
+    flex-wrap: wrap;
+  }
   .collapsable-nav-row .main-content-container,
   .collapsable-nav-row .main-content-container.full-width,
   .collapsable-nav-row .sidebar {
     display: block;
     width: 100%;
     margin: 0;
+  }
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0;
   }
 }
 .main-content-container .character-list {
@@ -349,32 +347,6 @@ table tr:nth-of-type(2n) {
 }
 .recent-updates .recent-update .avatar {
   max-width: 80px;
-}
-.campaign-public-layout .campaign-stream-module .summary {
-  font-size: .875em;
-}
-@media screen and (max-width:1139px) and (min-width:601px) {
-  .campaign-public-layout #sidebar {
-    display: grid;
-    grid-template-areas: 'partyArea streamArea' 'statsArea streamArea' 'empty streamArea';
-    grid-template-rows: auto;
-    grid-template-columns: 50% 50%;
-    grid-gap: 16px;
-    overflow: hidden;
-  }
-  .campaign-public-layout #sidebar .module {
-    margin-bottom: 0;
-  }
-  .campaign-public-layout #sidebar .sidebar-party-members {
-    grid-area: partyArea;
-  }
-  .campaign-public-layout #sidebar #campaign-quick-stats {
-    grid-area: statsArea;
-  }
-  .campaign-public-layout #sidebar #campaign-stream {
-    grid-area: streamArea;
-    margin-right: 16px;
-  }
 }
 @media screen and (max-width:769px) {
   .campaign-public-layout #sidebar {

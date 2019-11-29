@@ -45,6 +45,7 @@
 .sidebar-see-all-wiki-pages {
   padding: 0px !important;
 }
+
 .sidebar-last-updated,
 .sidebar-see-all-wiki-pages,
 .see-all-wiki-pages-button {
@@ -67,47 +68,13 @@
   max-height: 60px;
   padding-bottom: 0.625em;
 }
+
 .sidebar-last-updated .updated-by-container .when .time {
   padding-top: 0px;
 }
+
 .recent-updates .recent-update .avatar {
   max-width: 80px;
-}
-
-/**
-  LARGE / MEDIUM SCREENS
-  When the sidebar is knocked down below the main content, this
-  CSS grid layout keeps the elements tidy.
-*/
-@media screen and (max-width: 1139px) and (min-width: 601px) {
-  .campaign-public-layout #sidebar {
-    display: grid;
-    grid-template-areas:
-      'partyArea streamArea'
-      'statsArea streamArea'
-      'empty streamArea';
-    grid-template-rows: auto;
-    grid-template-columns: 50% 50%;
-    grid-gap: 16px;
-    overflow: hidden;
-  }
-
-  .campaign-public-layout #sidebar .module {
-    margin-bottom: 0px;
-  }
-
-  .campaign-public-layout #sidebar .sidebar-party-members {
-    grid-area: partyArea;
-  }
-
-  .campaign-public-layout #sidebar #campaign-quick-stats {
-    grid-area: statsArea;
-  }
-
-  .campaign-public-layout #sidebar #campaign-stream {
-    grid-area: streamArea;
-    margin-right: 16px;
-  }
 }
 
 /**

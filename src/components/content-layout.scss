@@ -12,6 +12,7 @@
 .campaign-public-layout {
   background-color: var(--body-bg-color);
 }
+
 .campaign-public-layout #content {
   width: 100%;
   max-width: 100%;
@@ -38,17 +39,14 @@
   flex-shrink: 0;
   margin-right: 16px;
 }
+
 .collapsable-nav-row .main-content-container {
   width: 100%;
   padding: 0px;
 }
-.collapsable-nav-row .main-content-container.full-width {
-  float: none;
-  width: calc(100% - 176px);
-  padding: 0px;
-}
+
 .collapsable-nav-row .sidebar {
-  width: 260px;
+  width: 280px;
   flex-shrink: 0;
   padding: 0px;
   margin-left: 16px;
@@ -67,20 +65,18 @@
   the left-hand nav stretch all the way to the bottom of the page.
 */
 @media screen and (max-width: 1139px) {
-  .campaign-public-layout .collapsable-nav-row {
-    flex-wrap: wrap;
-  }
+  // .campaign-public-layout .collapsable-nav-row {
+  //   flex-wrap: wrap;
+  // }
+
   .collapsable-nav-row .front-nav-container {
-    position: absolute;
-    height: 100%;
+    width: 70px;
   }
-  .collapsable-nav-row .main-content-container,
+  .collapsable-nav-row .front-nav-container .nav-text {
+    display: none;
+  }
   .collapsable-nav-row .sidebar {
-    width: calc(100% - 176px);
-    margin-left: 176px;
-  }
-  .campaign-public-layout #campaign-footer {
-    margin-bottom: 0px;
+    width: 220px;
   }
 }
 
@@ -90,11 +86,18 @@
   colun layout for mobile displays.
 */
 @media screen and (max-width: 769px) {
+  .campaign-public-layout .collapsable-nav-row {
+    flex-wrap: wrap;
+  }
+
   .collapsable-nav-row .main-content-container,
   .collapsable-nav-row .main-content-container.full-width,
   .collapsable-nav-row .sidebar {
     display: block;
     width: 100%;
     margin: 0px;
+  }
+  .campaign-public-layout #campaign-footer {
+    margin-bottom: 0px;
   }
 }

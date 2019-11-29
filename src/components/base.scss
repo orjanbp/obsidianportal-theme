@@ -35,14 +35,17 @@ body.campaign-public-layout .title a {
   color: var(--text-color-big);
   border-bottom: none;
 }
+
 .campaign-public-layout #sidebar {
   color: var(--text-color-body);
 }
+
 .campaign-public-layout .main-content-container label {
   color: var(--text-color-body);
   margin-top: 4px;
   margin-bottom: 8px;
 }
+
 .preview-contnet h1,
 .preview-content h2,
 .preview-content h3,
@@ -56,6 +59,7 @@ input[type='tel']::placeholder,
 textarea::placeholder {
   color: var(--text-color-soft);
 }
+
 .campaign-landing-show .campaign-landing-page-container,
 .campaign-maps-new .secret-sections > section,
 .campaign-maps-new section.main-section,
@@ -146,6 +150,7 @@ body.campaign-public-layout .post-section.post-main,
 body.campaign-public-layout .title ~ div[itemprop='text'] {
   margin-top: 24px;
 }
+
 ul.as-selections li.as-selection-item {
   color: #333;
 }
@@ -160,15 +165,18 @@ ul.as-selections li.as-selection-item {
   background: var(--content-bg-light);
   color: var(--text-color-body);
 }
+
 .adventure-log-index .post-date,
 .adventure-log-show .post-date {
   background-color: var(--content-bg-accent-1);
 }
+
 .adventure-log-index .adventure-log-new-container,
 .adventure-log-index-filter .filter-header,
 .adventure-log-index-filter ul .active {
   background-color: var(--content-bg-accent-2);
 }
+
 .adventure-log-index .overflow-fade-out {
   background: -moz-linear-gradient(
     to bottom,
