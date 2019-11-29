@@ -333,6 +333,16 @@ table tr:nth-of-type(2n) {
 .sidebar-see-all-wiki-pages {
   width: 100%!important;
 }
+.quick-stats-container .row {
+  display: flex;
+}
+.quick-stats-container .row .small-5 {
+  width: 100px;
+  flex-shrink: 0;
+}
+.quick-stats-container .row .small-7 {
+  width: 100%;
+}
 .sidebar-party-members .game-master .small-3 {
   max-width: 50px;
 }
@@ -347,6 +357,16 @@ table tr:nth-of-type(2n) {
 }
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+@media screen and (max-width:1139px) {
+  .fan-counter-container .become-a-fan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fan-counter-container .become-a-fan-button .text {
+    display: none;
+  }
 }
 @media screen and (max-width:769px) {
   .campaign-public-layout #sidebar {

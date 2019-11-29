@@ -53,6 +53,22 @@
 }
 
 /**
+  The quick-stats numbers don't really need to use columns
+  like they are. This is a really hacky way to undo that, but
+  it works.
+*/
+.quick-stats-container .row {
+  display: flex;
+}
+.quick-stats-container .row .small-5 {
+  width: 100px;
+  flex-shrink: 0;
+}
+.quick-stats-container .row .small-7 {
+  width: 100%;
+}
+
+/**
   Shrink GM icon max size.
 */
 .sidebar-party-members .game-master .small-3 {
@@ -75,6 +91,20 @@
 
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+
+/**
+  MEDIUM-LARGE SCREENS
+*/
+@media screen and (max-width: 1139px) {
+  .fan-counter-container .become-a-fan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fan-counter-container .become-a-fan-button .text{
+    display: none;
+  }
 }
 
 /**
