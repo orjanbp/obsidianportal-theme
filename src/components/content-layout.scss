@@ -40,7 +40,8 @@
   margin-right: 16px;
 }
 
-.collapsable-nav-row .main-content-container {
+.collapsable-nav-row .main-content-container,
+.collapsable-nav-row .main-content-container.full-width {
   width: 100%;
   padding: 0px;
 }

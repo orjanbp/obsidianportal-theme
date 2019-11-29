@@ -217,7 +217,8 @@ table tr:nth-of-type(2n) {
   flex-shrink: 0;
   margin-right: 16px;
 }
-.collapsable-nav-row .main-content-container {
+.collapsable-nav-row .main-content-container,
+.collapsable-nav-row .main-content-container.full-width {
   width: 100%;
   padding: 0;
 }
@@ -327,7 +328,7 @@ table tr:nth-of-type(2n) {
   max-width: none;
 }
 .sidebar-see-all-wiki-pages {
-  padding: 0!important;
+  padding: 0 16px!important;
 }
 .see-all-wiki-pages-button,
 .sidebar-last-updated,
