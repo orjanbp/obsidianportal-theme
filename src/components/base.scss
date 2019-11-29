@@ -3,10 +3,26 @@
  * text colours, background colours, and so forth. It should
  */
 
+/**
+  Change the main body font size.
+*/
 p {
   font-size: 0.875em;
 }
 
+/**
+  Reduce the font size of the latest update
+  module in the campaign sidebar.
+*/
+.campaign-public-layout .campaign-stream-module .summary {
+  font-size: 0.875em;
+}
+
+/**
+  Give the heading text colour to all headings, and the body
+  text colour to all relevant body element. This also includes
+  Other adjustments and tweaks to how these text elements show.
+*/
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3,
@@ -79,56 +95,6 @@ body.campaign-public-layout .post-section.post-main,
 }
 
 /**
-  The Adventure Log page differs a bit in design, so some
-  design changes needed to pull this off.
-*/
-.adventure-log-index .adventure-log-post,
-.adventure-log-show .post-comments,
-.adventure-log-show .post-header-container {
-  background: var(--content-bg-light);
-  color: var(--text-color-body);
-}
-
-.adventure-log-index .post-date,
-.adventure-log-show .post-date {
-  background-color: var(--content-bg-accent-1);
-}
-
-.adventure-log-index .adventure-log-new-container,
-.adventure-log-index-filter .filter-header,
-.adventure-log-index-filter ul .active {
-  background-color: var(--content-bg-accent-2);
-}
-
-.adventure-log-index .overflow-fade-out {
-  background: -moz-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    var(--content-bg-light) 100%
-  );
-  background: -webkit-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    var(--content-bg-light) 100%
-  );
-  background: -o-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    var(--content-bg-light) 100%
-  );
-  background: -ms-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    var(--content-bg-light) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    var(--content-bg-light) 100%
-  );
-}
-
-/**
   Recolour the borders at the bottom of headings
   to fit with the theming.
 */
@@ -187,4 +153,54 @@ body.campaign-public-layout .title ~ div[itemprop='text'] {
 
 ul.as-selections li.as-selection-item {
   color: #333;
+}
+
+/**
+  The Adventure Log page differs a bit in design, so some
+  design changes needed to pull this off.
+*/
+.adventure-log-index .adventure-log-post,
+.adventure-log-show .post-comments,
+.adventure-log-show .post-header-container {
+  background: var(--content-bg-light);
+  color: var(--text-color-body);
+}
+
+.adventure-log-index .post-date,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-accent-1);
+}
+
+.adventure-log-index .adventure-log-new-container,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active {
+  background-color: var(--content-bg-accent-2);
+}
+
+.adventure-log-index .overflow-fade-out {
+  background: -moz-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -o-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -ms-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
 }

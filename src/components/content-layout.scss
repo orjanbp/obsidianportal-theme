@@ -9,11 +9,9 @@
   Change the body background colour and override Obsidian Portal's
   content max-width so we can do all that ourselves.
 */
-
 .campaign-public-layout {
   background-color: var(--body-bg-color);
 }
-
 .campaign-public-layout #content {
   width: 100%;
   max-width: 100%;
@@ -25,7 +23,6 @@
   details sidebar. Let's turn that into a flex element and
   add a single solid background to all of it.
 */
-
 .campaign-public-layout .collapsable-nav-row {
   display: flex;
   background-color: var(--content-bg-dark);
@@ -41,18 +38,15 @@
   flex-shrink: 0;
   margin-right: 16px;
 }
-
 .collapsable-nav-row .main-content-container {
   width: 100%;
   padding: 0px;
 }
-
 .collapsable-nav-row .main-content-container.full-width {
   float: none;
   width: calc(100% - 176px);
   padding: 0px;
 }
-
 .collapsable-nav-row .sidebar {
   width: 260px;
   flex-shrink: 0;
@@ -63,7 +57,6 @@
 /**
   Add spacing between footer links
 */
-
 .campaign-public-layout #campaign-footer .inline-list > li {
   margin-left: 0.7em !important;
 }
@@ -73,23 +66,19 @@
   Knock the right-hand sidebar to the bottom of the page, but make
   the left-hand nav stretch all the way to the bottom of the page.
 */
-
 @media screen and (max-width: 1139px) {
   .campaign-public-layout .collapsable-nav-row {
     flex-wrap: wrap;
   }
-
   .collapsable-nav-row .front-nav-container {
     position: absolute;
     height: 100%;
   }
-
   .collapsable-nav-row .main-content-container,
   .collapsable-nav-row .sidebar {
     width: calc(100% - 176px);
     margin-left: 176px;
   }
-
   .campaign-public-layout #campaign-footer {
     margin-bottom: 0px;
   }

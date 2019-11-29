@@ -54,7 +54,6 @@
 /**
   Shrink GM icon max size.
 */
-
 .sidebar-party-members .game-master .small-3 {
   max-width: 50px;
 }
@@ -62,24 +61,17 @@
 /**
   Tidy player icon sizes
 */
-
 .sidebar-party-members .player-characters .player {
   clear: none;
   max-width: 70px;
   max-height: 60px;
   padding-bottom: 0.625em;
 }
-
 .sidebar-last-updated .updated-by-container .when .time {
   padding-top: 0px;
 }
-
 .recent-updates .recent-update .avatar {
   max-width: 80px;
-}
-
-.campaign-public-layout .campaign-stream-module .summary {
-  font-size: 0.875em;
 }
 
 /**
@@ -87,7 +79,6 @@
   When the sidebar is knocked down below the main content, this
   CSS grid layout keeps the elements tidy.
 */
-
 @media screen and (max-width: 1139px) and (min-width: 601px) {
   .campaign-public-layout #sidebar {
     display: grid;
@@ -122,7 +113,6 @@
 /**
   For Mobile screens
 */
-
 @media screen and (max-width: 769px) {
   .campaign-public-layout #sidebar {
     display: block;
