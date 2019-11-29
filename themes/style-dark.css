@@ -327,11 +327,13 @@ table tr:nth-of-type(2n) {
   border: none;
   max-width: none;
 }
-.sidebar-last-updated {
-  width: 100%!important;
-}
 .sidebar-see-all-wiki-pages {
   padding: 0!important;
+}
+.see-all-wiki-pages-button,
+.sidebar-last-updated,
+.sidebar-see-all-wiki-pages {
+  width: 100%!important;
 }
 .sidebar-party-members .game-master .small-3 {
   max-width: 50px;

@@ -39,12 +39,16 @@
   max-width: none;
 }
 
-.sidebar-last-updated {
-  width: 100% !important;
-}
-
+/**
+  Adjust some sidebar elements and how they're sized.
+*/
 .sidebar-see-all-wiki-pages {
   padding: 0px !important;
+}
+.sidebar-last-updated,
+.sidebar-see-all-wiki-pages,
+.see-all-wiki-pages-button {
+  width: 100% !important;
 }
 
 /**
