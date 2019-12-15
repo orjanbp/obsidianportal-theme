@@ -28,7 +28,7 @@
   display: flex;
   background-color: var(--content-bg-dark);
   max-width: var(--content-max-width);
-  padding: 16px;
+  padding: var(--content-padding);
 }
 
 /**
@@ -40,9 +40,18 @@
   margin-right: 16px;
 }
 
-.collapsable-nav-row .main-content-container,
-.collapsable-nav-row .main-content-container.full-width {
+.collapsable-nav-row .main-content-container {
   width: 100%;
+  padding: 0px;
+}
+
+/**
+  Fixes for pages that don't have a sidebar. The Character
+  page especially has some issues with being 100% wide.
+  Probably box-sizing doing it somewhere.
+*/
+.collapsable-nav-row .main-content-container.full-width {
+  width: calc(100% - 176px);
   padding: 0px;
 }
 
@@ -51,6 +60,14 @@
   flex-shrink: 0;
   padding: 0px;
   margin-left: 16px;
+}
+
+/**
+  Narrow the gap between sections on post pages, so it matches
+  the gap on the sides.
+*/
+body.campaign-public-layout .post-section {
+  margin-bottom: 16px;
 }
 
 /**
@@ -67,13 +84,13 @@
 */
 @media screen and (max-width: 1139px) {
   .collapsable-nav-row .front-nav-container {
-    width: 70px;
-  }
-  .collapsable-nav-row .front-nav-container .nav-text {
-    display: none;
+    width: 52px;
   }
   .collapsable-nav-row .sidebar {
     width: 220px;
+  }
+  .collapsable-nav-row .main-content-container.full-width {
+    width: calc(100% - 86px);
   }
 }
 
@@ -94,7 +111,22 @@
     width: 100%;
     margin: 0px;
   }
+
   .campaign-public-layout #campaign-footer {
     margin-bottom: 0px;
+  }
+  .campaign-public-layout #campaign-footer .links {
+    padding: 0px 16px;
+  }
+
+  /**
+    Overwrite padding and margin insertions that happen
+    at this screen size for whatever reason.
+  */
+  .collapsable-nav-row .main-content-container {
+    padding-top: 0px !important;
+  }
+  .campaign-public-layout #sidebar {
+    margin-top: 0px !important;
   }
 }

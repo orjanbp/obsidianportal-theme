@@ -32,8 +32,13 @@
   max-width: none;
 }
 
+/**
+  Recolour some backgrounds to match
+  the theme.
+*/
 .fan-count-wrapper,
-.comment-count-wrapper {
+.comment-count-wrapper,
+.sidebar-last-updated .updated-by-container .who {
   background: var(--content-bg-accent-2);
   border: none;
   max-width: none;

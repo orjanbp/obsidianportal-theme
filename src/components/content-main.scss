@@ -15,15 +15,6 @@
 
 /**
   CHARACTER LIST
-  Add a more prominent divide between PC and NPC characters
-  on the player list.
-*/
-.main-content-container .character-list ~ .character-list {
-  padding-top: 32px;
-}
-
-/**
-  CHARACTER LIST
   Make the fadeout gradient on the Character List items use the
   body background colour.
   */

@@ -1,5 +1,6 @@
 :root {
   --content-max-width: 1400px;
+  --content-padding: 0px;
   --body-bg-color: #19191B;
   --background-image-height: 600px;
   --background-image-position: center 30%;
@@ -8,6 +9,7 @@
   --content-bg-light: #1f2022;
   --content-bg-accent-1: #212325;
   --content-bg-accent-2: #242628;
+  --content-bg-accent-3: #353638;
   --text-color-big: #fff;
   --text-color-body: #C0C0C0;
   --text-color-soft: #868686;
@@ -124,28 +126,6 @@ body.campaign-public-layout .title ~ div[itemprop=text] {
 ul.as-selections li.as-selection-item {
   color: #333;
 }
-.adventure-log-index .adventure-log-post,
-.adventure-log-show .post-comments,
-.adventure-log-show .post-header-container {
-  background: var(--content-bg-light);
-  color: var(--text-color-body);
-}
-.adventure-log-index .post-date,
-.adventure-log-show .post-date {
-  background-color: var(--content-bg-accent-1);
-}
-.adventure-log-index .adventure-log-new-container,
-.adventure-log-index-filter .filter-header,
-.adventure-log-index-filter ul .active {
-  background-color: var(--content-bg-accent-2);
-}
-.adventure-log-index .overflow-fade-out {
-  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
-}
 table {
   border-color: var(--bottom-line-color);
   background: var(--content-bg-dark);
@@ -210,16 +190,19 @@ table tr:nth-of-type(2n) {
   display: flex;
   background-color: var(--content-bg-dark);
   max-width: var(--content-max-width);
-  padding: 16px;
+  padding: var(--content-padding);
 }
 .collapsable-nav-row .front-nav-container {
   width: 160px;
   flex-shrink: 0;
   margin-right: 16px;
 }
-.collapsable-nav-row .main-content-container,
-.collapsable-nav-row .main-content-container.full-width {
+.collapsable-nav-row .main-content-container {
   width: 100%;
+  padding: 0;
+}
+.collapsable-nav-row .main-content-container.full-width {
+  width: calc(100% - 176px);
   padding: 0;
 }
 .collapsable-nav-row .sidebar {
@@ -228,18 +211,21 @@ table tr:nth-of-type(2n) {
   padding: 0;
   margin-left: 16px;
 }
+body.campaign-public-layout .post-section {
+  margin-bottom: 16px;
+}
 .campaign-public-layout #campaign-footer .inline-list > li {
   margin-left: .7em!important;
 }
 @media screen and (max-width:1139px) {
   .collapsable-nav-row .front-nav-container {
-    width: 70px;
-  }
-  .collapsable-nav-row .front-nav-container .nav-text {
-    display: none;
+    width: 52px;
   }
   .collapsable-nav-row .sidebar {
     width: 220px;
+  }
+  .collapsable-nav-row .main-content-container.full-width {
+    width: calc(100% - 86px);
   }
 }
 @media screen and (max-width:769px) {
@@ -256,13 +242,19 @@ table tr:nth-of-type(2n) {
   .campaign-public-layout #campaign-footer {
     margin-bottom: 0;
   }
+  .campaign-public-layout #campaign-footer .links {
+    padding: 0 16px;
+  }
+  .collapsable-nav-row .main-content-container {
+    padding-top: 0!important;
+  }
+  .campaign-public-layout #sidebar {
+    margin-top: 0!important;
+  }
 }
 .main-content-container .character-list {
   padding-left: .9375em;
   padding-right: .9375em;
-}
-.main-content-container .character-list ~ .character-list {
-  padding-top: 32px;
 }
 .right-side-fade-out {
   background: -moz-linear-gradient(to right,rgba(0,0,0,0) 0,var(--content-bg-light) 100%)!important;
@@ -273,6 +265,32 @@ table tr:nth-of-type(2n) {
 }
 .main-content-container div[itemprop=text] > h6 {
   display: var(--character-desc-bio-heading-display);
+}
+.adventure-log-index .adventure-log-post,
+.adventure-log-show .post-comments,
+.adventure-log-show .post-header-container {
+  background: var(--content-bg-light);
+  color: var(--text-color-body);
+}
+.sidebar-adventure-log-neighbors .neighbor-post .post-column {
+  background-color: var(--content-bg-accent-1);
+}
+.sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
+  color: var(--text-color-body);
+}
+.adventure-log-index .adventure-log-new-container,
+.adventure-log-index .post-date,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-accent-2);
+}
+.adventure-log-index .overflow-fade-out {
+  background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: -ms-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
 }
 .collapsable-nav-row .front-nav-container {
   padding: 16px 0 0;
@@ -304,6 +322,14 @@ table tr:nth-of-type(2n) {
 .campaign-public-layout #campaign-nav li.active {
   opacity: 1;
 }
+@media screen and (max-width:1139px) {
+  .collapsable-nav-row .front-nav-container nav li {
+    padding-left: 8px;
+  }
+  .collapsable-nav-row .front-nav-container .nav-text {
+    display: none;
+  }
+}
 .campaign-public-layout #sidebar .campaign-stream-module,
 .campaign-public-layout #sidebar .sidebar-last-updated,
 .campaign-public-layout #sidebar .sidebar-party-members,
@@ -322,7 +348,8 @@ table tr:nth-of-type(2n) {
   max-width: none;
 }
 .comment-count-wrapper,
-.fan-count-wrapper {
+.fan-count-wrapper,
+.sidebar-last-updated .updated-by-container .who {
   background: var(--content-bg-accent-2);
   border: none;
   max-width: none;

@@ -1,0 +1,54 @@
+/**
+  The Adventure Log page has a number of styles that differ from the
+  rest of the layout, so we'll pull this out in its own module.
+*/
+
+.adventure-log-index .adventure-log-post,
+.adventure-log-show .post-comments,
+.adventure-log-show .post-header-container {
+  background: var(--content-bg-light);
+  color: var(--text-color-body);
+}
+
+.sidebar-adventure-log-neighbors .neighbor-post .post-column {
+    background-color: var(--content-bg-accent-1);
+}
+.sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
+    color: var(--text-color-body);
+}
+
+.adventure-log-index .adventure-log-new-container,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active,
+.adventure-log-index .post-date,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-accent-2);
+}
+
+.adventure-log-index .overflow-fade-out {
+  background: -moz-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -o-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: -ms-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    var(--content-bg-light) 100%
+  );
+}

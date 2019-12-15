@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+
+## [Unreleased]
+
+### Added
+
+- Variable for adjusting the extra padding around the page content.
+
+### Changed
+
+- Fix issues with page width on pages that don't have a right-hand sidebar.
+
+- Move to rimraf for cleaning directory on compile.
+
+- Narrow navbar further on phablet screen sizes. 
+
+### Removed
+
+- Clear the added padding on Character pages.
+
+
 ## [0.12.0] - 2019-11-29
 
 ### Added

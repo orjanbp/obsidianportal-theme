@@ -4,7 +4,7 @@
   "description": "CSS styling for Obsidian Portal campaigns, to bring the campaign's frontpage and wiki more in line with other pages",
   "main": "index.js",
   "scripts": {
-    "compile": "rm ./themes/* && gulp compile",
+    "compile": "rimraf ./themes/* && gulp compile",
     "watch": "gulp watch",
     "lint": "prettier --config ./.prettierrc.yaml --write src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,7 @@
     "gulp-sass": "^4.0.2",
     "prettier": "^1.19.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  }
 }

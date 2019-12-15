@@ -71,3 +71,17 @@
 .campaign-public-layout #campaign-nav li.active {
   opacity: 1;
 }
+
+
+/**
+  MEDIUM-LARGE SCREENS
+  Collapse the left-hand sidebar to just a narrow list of buttons
+*/
+@media screen and (max-width: 1139px) {
+  .collapsable-nav-row .front-nav-container nav li {
+    padding-left: 8px;
+  }
+  .collapsable-nav-row .front-nav-container .nav-text {
+    display: none;
+  }
+}
