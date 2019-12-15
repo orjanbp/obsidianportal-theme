@@ -1,0 +1,21 @@
+/**
+  This file contains different CSS classes that can be used to
+  style inline divs on different character and wiki pages.
+*/
+
+/**
+  Helper for having an image inline on the page, alongside the
+  rest of the page content.
+*/
+.image-float-right {
+  float: right;
+  max-width: 460px;
+  padding: 0px 0px 16px 16px;
+}
+@media screen and (max-width: 1040px) {
+  .image-float-right {
+    float: none;
+    max-width: 100%;
+    padding: 0px;
+  }
+}
