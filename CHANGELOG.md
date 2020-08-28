@@ -37,6 +37,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Clear the added padding on Character pages.
 
+- Removed some redundant Accent colors.
+
 
 ## [0.12.0] - 2019-11-29
 
