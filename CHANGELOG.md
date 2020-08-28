@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Variable for adjusting the extra padding around the page content.
 
+- Variable for adjusting space above Campaign header.
+
 ### Changed
 
 - Fix issues with page width on pages that don't have a right-hand sidebar.
