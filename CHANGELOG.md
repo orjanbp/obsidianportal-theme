@@ -19,6 +19,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Narrow navbar further on phablet screen sizes. 
 
+- 1240px as the default page max width.
+
 ### Removed
 
 - Clear the added padding on Character pages.
