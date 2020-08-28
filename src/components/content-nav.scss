@@ -8,7 +8,7 @@
   the button space more properly.
 */
 .collapsable-nav-row .front-nav-container {
-  padding: 16px 0px 0px;
+  padding: 8px 0px 0px;
 }
 
 .collapsable-nav-row .front-nav-container nav {
@@ -16,7 +16,7 @@
 }
 
 .collapsable-nav-row .front-nav-container nav li {
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 /**
@@ -48,7 +48,7 @@
     var(--sidebar-gradient-top) 0%,
     var(--sidebar-gradient-bottom) 100%
   );
-  padding-top: 0.9375em;
+  
 }
 
 /**

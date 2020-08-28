@@ -29,6 +29,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Yellow bar on Header should align with body content.
 
+- Adjust sidebar nav padding for smoother collapse transition.
+
 ### Removed
 
 - Clear the added padding on Character pages.
