@@ -9,14 +9,12 @@
   background: var(--content-bg-light);
   color: var(--text-color-body);
 }
-
 .sidebar-adventure-log-neighbors .neighbor-post .post-column {
   background-color: var(--content-bg-accent);
 }
 .sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
   color: var(--text-color-body);
 }
-
 .adventure-log-index .adventure-log-new-container,
 .adventure-log-index-filter .filter-header,
 .adventure-log-index-filter ul .active,
@@ -25,6 +23,16 @@
   background-color: var(--content-bg-accent);
 }
 
+/**
+  Add padding so log doesn't hug corner sidebar edge.
+*/
+.sidebar-adventure-log-neighbors {
+  padding-right: 16px;
+}
+
+/**
+  Overflow should mage page background colour
+*/
 .adventure-log-index .overflow-fade-out {
   background: -moz-linear-gradient(
     to bottom,

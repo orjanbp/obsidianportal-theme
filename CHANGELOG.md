@@ -33,6 +33,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Adjust sidebar nav padding for smoother collapse transition.
 
+- Fix issue with Adventure Log sidebar.
+
 ### Removed
 
 - Clear the added padding on Character pages.

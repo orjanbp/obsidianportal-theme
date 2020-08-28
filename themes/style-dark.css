@@ -289,6 +289,9 @@ body.campaign-public-layout .post-section {
 .adventure-log-show .post-date {
   background-color: var(--content-bg-accent);
 }
+.sidebar-adventure-log-neighbors {
+  padding-right: 16px;
+}
 .adventure-log-index .overflow-fade-out {
   background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
   background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0,var(--content-bg-light) 100%);
