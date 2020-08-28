@@ -13,6 +13,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Variable for adjusting space above Campaign header.
 
+- Add new theme 'Warcraft'.
+
 ### Changed
 
 - Fix issues with page width on pages that don't have a right-hand sidebar.
