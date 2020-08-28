@@ -7,27 +7,26 @@
 /**
  Make summary row follow max-width variable
 */
-
 .campaign-public-layout #campaign-summary-row {
   max-width: var(--content-max-width);
 }
-
 .campaign-public-layout #campaign-summary-row .campaign-title {
   font-size: var(--title-font-size);
 }
-
 @media screen and (max-width: 940px) {
   .campaign-public-layout #campaign-summary-row .campaign-title {
     font-size: calc(var(--title-font-size) * 0.8);
   }
 }
-
 @media screen and (max-width: 600px) {
   .campaign-public-layout #campaign-summary-row .campaign-title {
     font-size: calc(var(--title-font-size) * 0.65);
   }
 }
-
+.campaign-public-layout #banner-container {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+}
 .campaign-public-layout .highlight-container {
   height: 4px;
 }
@@ -35,7 +34,6 @@
 /**
   Reposition background and apply variables
 */
-
 .campaign-public-layout .page-background {
   position: absolute;
   max-height: var(--background-image-height);
@@ -46,7 +44,6 @@
   Add gradient to fade the background image into the
   background colour.
 */
-
 .campaign-public-layout .page-background::after {
   content: '';
   display: block;

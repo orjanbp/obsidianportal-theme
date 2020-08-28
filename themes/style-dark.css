@@ -1,5 +1,5 @@
 :root {
-  --content-max-width: 1400px;
+  --content-max-width: 1240px;
   --content-padding: 0px;
   --body-bg-color: #19191b;
   --background-image-height: 600px;
@@ -156,6 +156,10 @@ table tr:nth-of-type(2n) {
   .campaign-public-layout #campaign-summary-row .campaign-title {
     font-size: calc(var(--title-font-size) * .65);
   }
+}
+.campaign-public-layout #banner-container {
+  margin-left: -.9375em;
+  margin-right: -.9375em;
 }
 .campaign-public-layout .highlight-container {
   height: 4px;
@@ -386,6 +390,12 @@ body.campaign-public-layout .post-section {
 }
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+#campaign-stream .stream-module-container {
+  margin: 0;
+}
+#campaign-stream .stream-module-container .large-12 {
+  padding: 0;
 }
 @media screen and (max-width:1139px) {
   .fan-counter-container .become-a-fan-button {

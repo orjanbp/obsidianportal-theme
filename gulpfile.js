@@ -30,7 +30,7 @@ const cssBeautify = {
 }
 
 // Taks to compile SASS to CSS
-const compile = () => {
+const build = () => {
   return gulp
     .src('./src/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -39,12 +39,12 @@ const compile = () => {
     .pipe(gulp.dest('./themes'))
 }
 
-// Task to auto-compile when editing
+// Task to auto-build when editing
 const watch = () => {
-  gulp.watch(['./src/**/*'], compile)
+  gulp.watch(['./src/**/*'], build)
 }
 
-exports.compile = compile
+exports.build = build
 exports.watch = watch
 
-exports.default = gulp.parallel(compile)
+exports.default = gulp.parallel(build)

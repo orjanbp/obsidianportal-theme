@@ -21,6 +21,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - 1240px as the default page max width.
 
+- Renamed Gulp compile to build.
+
+- Fix padding issue on Campaign Stream module. 
+
+- Yellow bar on Header should align with body content.
+
 ### Removed
 
 - Clear the added padding on Character pages.
