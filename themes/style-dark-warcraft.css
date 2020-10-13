@@ -273,7 +273,7 @@ body.campaign-public-layout .post-section {
 }
 .main-content-container #campaign-footer {
   padding: 16px 20px;
-  background: #fff;
+  background: var(--content-bg-light);
   margin-top: 16px;
 }
 .main-content-container #campaign-footer .links {
