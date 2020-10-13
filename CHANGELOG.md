@@ -12,7 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- Renamed some files
+- Renamed some files.
+
+### Removed 
+
+- Deprecated text-color-soft. It wasn't really used anywhere.
 
 ## [0.13.0] - 2020-08-29
 
