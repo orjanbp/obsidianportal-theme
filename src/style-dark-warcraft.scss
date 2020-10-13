@@ -26,8 +26,12 @@
 
   --sidebar-gradient-top: #292929;
   --sidebar-gradient-bottom: #19191b;
+  --sidebar-text-inactive: #868686;
+  --sidebar-text-active: #FFF;
 
   --character-desc-bio-heading-display: none;
 }
 
 @import './components/_partials.scss';
+
+/* Theme specific alterations can go below here */

@@ -26,7 +26,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.1.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "yargs-parser": "^20.2.1"
   },
   "dependencies": {
     "rimraf": "^3.0.2"

@@ -64,12 +64,18 @@
 }
 
 .campaign-public-layout #campaign-nav li {
-  opacity: 0.6;
+  // opacity: 1;
   font-weight: normal;
+}
+.campaign-public-layout #campaign-nav li a {
+  color: var(--sidebar-text-inactive);
+}
+.campaign-public-layout #campaign-nav li.active a {
+  color: var(--sidebar-text-active);
 }
 
 .campaign-public-layout #campaign-nav li.active {
-  opacity: 1;
+  // opacity: 1;
 }
 
 /**

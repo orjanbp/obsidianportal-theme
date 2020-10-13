@@ -4,29 +4,29 @@
  * It then imports all partials afterwards, so that this single
  * SCSS file can be compiled into a CSS file without needing to
  * gather all SASS files during the build.
- */
+ */ 
 
 :root {
   --content-max-width: 1240px;
   --content-padding: 0px;
   --header-space-above: 30px;
-  --body-bg-color: #19191b;
+  --body-bg-color: #e0e0e0;
   --background-image-height: 600px;
   --background-image-position: center 30%;
   --title-font-size: 2.5rem;
 
-  --content-bg-dark: #19191b;
-  --content-bg-light: #1f2022;
-  --content-bg-accent: #242628;
+  --content-bg-dark: #efefef;
+  --content-bg-light: #FFF;
+  --content-bg-accent: #f7f7f7;
 
-  --text-color-big: #fff;
-  --text-color-body: #c0c0c0;
-  --text-color-soft: #868686;
-  --bottom-line-color: #686868;
+  --text-color-big: #000000;
+  --text-color-body: #616161;
+  --text-color-soft: #757575;
+  --bottom-line-color: #bdbdbd;
 
-  --sidebar-gradient-top: #292929;
-  --sidebar-gradient-bottom: #19191b;
-  --sidebar-text-inactive: #868686;
+  --sidebar-gradient-top: #FFF;
+  --sidebar-gradient-bottom: #FFF;
+  --sidebar-text-inactive: #616161;
   --sidebar-text-active: #FFF;
 
   --character-desc-bio-heading-display: none;
