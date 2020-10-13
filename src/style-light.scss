@@ -20,17 +20,33 @@
   --content-bg-accent: #f7f7f7;
 
   --text-color-big: #000000;
-  --text-color-body: #616161;
+  --text-color-body: #414141;
   --bottom-line-color: #bdbdbd;
 
   --sidebar-gradient-top: #FFF;
   --sidebar-gradient-bottom: #FFF;
-  --sidebar-text-inactive: #616161;
+  --sidebar-text-inactive: #414141;
   --sidebar-text-active: #FFF;
 
   --character-desc-bio-heading-display: none;
+
+  /* Light-mode specific vars */
+  --light-mode-icons: #959595;
 }
 
 @import './components/_partials.scss';
 
 /* Theme specific alterations can go below here */
+
+/**
+  Lighten big icons in this light theme
+**/
+.section-header.stream .section-header-icon,
+.op-icon-gm,
+.campaign-public-layout #campaign-nav li .icon {
+  color: var(--light-mode-icons);
+}
+.campaign-public-layout #campaign-nav li.active .icon,
+.campaign-public-layout #campaign-nav li:hover .icon {
+  color: var(--sidebar-text-active);
+}
