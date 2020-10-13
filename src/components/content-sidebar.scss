@@ -97,6 +97,22 @@
 }
 
 /**
+  Fix an alignment issue with the fan button
+**/
+.sidebar-quick-stats .become-a-fan-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-quick-stats .become-a-fan-button .icon-card-hearts {
+  display: block;
+}
+.sidebar-quick-stats .become-a-fan-button .text {
+  top: 0;
+  margin-left: 6px;
+}
+
+/**
   The Campaign Stream module has some pading that breaks with
   the sidebar rework in this theme, so this deals with that.
 */

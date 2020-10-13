@@ -70,12 +70,9 @@
 .campaign-public-layout #campaign-nav li a {
   color: var(--sidebar-text-inactive);
 }
-.campaign-public-layout #campaign-nav li.active a {
+.campaign-public-layout #campaign-nav li.active a,
+.campaign-public-layout #campaign-nav li:hover a {
   color: var(--sidebar-text-active);
-}
-
-.campaign-public-layout #campaign-nav li.active {
-  // opacity: 1;
 }
 
 /**

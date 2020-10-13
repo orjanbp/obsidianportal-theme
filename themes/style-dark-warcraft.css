@@ -328,7 +328,8 @@ body.campaign-public-layout .post-section {
 .campaign-public-layout #campaign-nav li a {
   color: var(--sidebar-text-inactive);
 }
-.campaign-public-layout #campaign-nav li.active a {
+.campaign-public-layout #campaign-nav li.active a,
+.campaign-public-layout #campaign-nav li:hover a {
   color: var(--sidebar-text-active);
 }
 @media screen and (max-width:1139px) {
@@ -395,6 +396,18 @@ body.campaign-public-layout .post-section {
 }
 .recent-updates .recent-update .avatar {
   max-width: 80px;
+}
+.sidebar-quick-stats .become-a-fan-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-quick-stats .become-a-fan-button .icon-card-hearts {
+  display: block;
+}
+.sidebar-quick-stats .become-a-fan-button .text {
+  top: 0;
+  margin-left: 6px;
 }
 #campaign-stream .stream-module-container {
   margin: 0;
