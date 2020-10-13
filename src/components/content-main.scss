@@ -54,3 +54,18 @@
 .main-content-container div[itemprop='text'] > h6 {
   display: var(--character-desc-bio-heading-display);
 }
+
+
+/**
+  CAMPAIGN FOOTER
+  No point for it really to have such a massive space below,
+  given the design of these themes.
+*/
+.main-content-container #campaign-footer {
+  padding: 16px 20px;
+  background: #FFF;
+  margin-top: 16px;
+}
+.main-content-container #campaign-footer .links {
+  margin: 0px;
+}

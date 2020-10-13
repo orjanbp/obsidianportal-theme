@@ -271,6 +271,14 @@ body.campaign-public-layout .post-section {
 .main-content-container div[itemprop=text] > h6 {
   display: var(--character-desc-bio-heading-display);
 }
+.main-content-container #campaign-footer {
+  padding: 16px 20px;
+  background: #fff;
+  margin-top: 16px;
+}
+.main-content-container #campaign-footer .links {
+  margin: 0;
+}
 .adventure-log-index .adventure-log-post,
 .adventure-log-show .post-comments,
 .adventure-log-show .post-header-container {
