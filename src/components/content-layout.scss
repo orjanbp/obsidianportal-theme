@@ -8,13 +8,24 @@
   PAGE BODY
   Change the body background colour and override Obsidian Portal's
   content max-width so we can do all that ourselves.
+  This also affects the content layout so that the main page body 
+  will stretch until the end of the page if it is shorter.
 */
 .campaign-public-layout {
   background-color: var(--body-bg-color);
 }
 .campaign-public-layout #content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 45px);
   width: 100%;
   max-width: 100%;
+}
+.campaign-public-layout #campaign-summary-row {
+  flex-shrink: 0;
+}
+.campaign-public-layout .collapsable-nav-row {
+  flex-grow: 1;
 }
 
 /**

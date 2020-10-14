@@ -143,7 +143,7 @@ table tr:nth-of-type(2n) {
 }
 .campaign-public-layout #campaign-summary-row {
   max-width: var(--content-max-width);
-  margin-top: var(--header-space-above);
+  padding-top: var(--header-space-above);
 }
 .campaign-public-layout #campaign-summary-row .campaign-title {
   font-size: var(--title-font-size);
@@ -188,8 +188,17 @@ table tr:nth-of-type(2n) {
   background-color: var(--body-bg-color);
 }
 .campaign-public-layout #content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 45px);
   width: 100%;
   max-width: 100%;
+}
+.campaign-public-layout #campaign-summary-row {
+  flex-shrink: 0;
+}
+.campaign-public-layout .collapsable-nav-row {
+  flex-grow: 1;
 }
 .campaign-public-layout .collapsable-nav-row {
   display: flex;

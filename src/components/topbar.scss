@@ -9,7 +9,7 @@
 */
 .campaign-public-layout #campaign-summary-row {
   max-width: var(--content-max-width);
-  margin-top: var(--header-space-above);
+  padding-top: var(--header-space-above);
 }
 .campaign-public-layout #campaign-summary-row .campaign-title {
   font-size: var(--title-font-size);
