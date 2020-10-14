@@ -241,7 +241,7 @@ body.campaign-public-layout .post-section {
     width: 220px;
   }
   .collapsable-nav-row .main-content-container.full-width {
-    width: calc(100% - 86px);
+    width: calc(100% - 66px);
   }
 }
 @media screen and (max-width:769px) {
@@ -488,7 +488,8 @@ body.campaign-public-layout .post-section {
 .character-index.campaign-public-layout .character-quick-search h4,
 .item-index.campaign-public-layout .character-quick-search h4,
 body.campaign-public-layout .title a {
-  font-family: 'Exo 2',Arial,Helvetica,sans-serif;
+  font-family: Kallisto,Arial,Helvetica,sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .campaign-public-layout #campaign-nav li .icon,
@@ -505,8 +506,9 @@ body.campaign-public-layout .title a {
   background-size: 800px;
   background-repeat: repeat;
 }
+#character-details,
 .collapsable-nav-row .front-nav-container,
-.collapsable-nav-row .sidebar #character-details,
+.collapsable-nav-row .sidebar,
 .main-content-container #campaign-footer,
 .main-content-container .campaign-landing-page-container,
 .main-content-container .post-section {

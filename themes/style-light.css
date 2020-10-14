@@ -241,7 +241,7 @@ body.campaign-public-layout .post-section {
     width: 220px;
   }
   .collapsable-nav-row .main-content-container.full-width {
-    width: calc(100% - 86px);
+    width: calc(100% - 66px);
   }
 }
 @media screen and (max-width:769px) {
