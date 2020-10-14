@@ -2,7 +2,7 @@
   --content-max-width: 1240px;
   --content-padding: 0px;
   --header-space-above: 30px;
-  --body-bg-color: #e0e0e0;
+  --body-bg-color: #212121;
   --background-image-height: 600px;
   --background-image-position: center 30%;
   --title-font-size: 2.5rem;
@@ -520,7 +520,7 @@ body.campaign-public-layout .title a {
   color: var(--sidebar-text-active);
 }
 .campaign-public-layout .collapsable-nav-row {
-  background: url(https://i.imgur.com/7nYisv5.png);
+  background-image: url(https://i.imgur.com/7nYisv5.png);
   background-size: 800px;
   background-repeat: repeat;
 }
