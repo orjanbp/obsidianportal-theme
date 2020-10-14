@@ -19,9 +19,9 @@
   --content-bg-light: #fffefc;
   --content-bg-accent: #f8f7f7;
 
-  --text-color-big: #000000;
+  --text-color-big: #681f17;
   --text-color-body: #414141;
-  --bottom-line-color: #bdbdbd;
+  --bottom-line-color: none;
 
   --sidebar-gradient-top: #FFF;
   --sidebar-gradient-bottom: #FFF;
@@ -37,6 +37,22 @@
 @import './components/_partials.scss';
 
 /* Theme specific alterations can go below here */
+
+/**
+  Add new font to headings
+*/
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h4,
+.campaign-public-layout .main-content h5,
+.campaign-public-layout .main-content h6,
+.character-index.campaign-public-layout .character-quick-search h4,
+.item-index.campaign-public-layout .character-quick-search h4,
+body.campaign-public-layout .title a {
+  font-family: 'Kallisto', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
 
 /**
   Lighten big icons in this light theme

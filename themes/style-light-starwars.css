@@ -9,9 +9,9 @@
   --content-bg-dark: #eeedeb;
   --content-bg-light: #fffefc;
   --content-bg-accent: #f8f7f7;
-  --text-color-big: #000000;
+  --text-color-big: #681f17;
   --text-color-body: #414141;
-  --bottom-line-color: #bdbdbd;
+  --bottom-line-color: none;
   --sidebar-gradient-top: #FFF;
   --sidebar-gradient-bottom: #FFF;
   --sidebar-text-inactive: #414141;
@@ -478,6 +478,18 @@ body.campaign-public-layout .post-section {
     max-width: 100%;
     padding: 0;
   }
+}
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h4,
+.campaign-public-layout .main-content h5,
+.campaign-public-layout .main-content h6,
+.character-index.campaign-public-layout .character-quick-search h4,
+.item-index.campaign-public-layout .character-quick-search h4,
+body.campaign-public-layout .title a {
+  font-family: 'Exo 2',Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
 }
 .campaign-public-layout #campaign-nav li .icon,
 .op-icon-gm,
