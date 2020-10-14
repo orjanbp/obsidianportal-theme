@@ -95,6 +95,7 @@ body.campaign-public-layout .post-section.post-main {
 #gm-secrets .gm-only-header.title,
 #gm-secrets .title,
 .campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h4.gm-only-header.title .post-gm-only .title,
 .character-show .main-content section .title,
 .gm-only-header.title,
 .item-show .main-content section .title .post-gm-only .gm-only-header.title,
@@ -490,7 +491,24 @@ body.campaign-public-layout .post-section {
 body.campaign-public-layout .title a {
   font-family: Kallisto,Arial,Helvetica,sans-serif;
   font-weight: 600;
+}
+#gm-secrets .gm-only-header.title,
+#gm-secrets .title,
+.campaign-public-layout .main-content h1,
+.campaign-public-layout .main-content h2,
+.campaign-public-layout .main-content h3,
+.post-gm-only .gm-only-header.title,
+.post-gm-only .title,
+.secret-section .gm-only-header.title,
+.secret-section .title {
   text-transform: uppercase;
+}
+.campaign-stream-module h2.name,
+.character-index.campaign-public-layout .secondary-heading,
+.item-index.campaign-public-layout .secondary-heading {
+  font-family: Kallisto,Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 .campaign-public-layout #campaign-nav li .icon,
 .op-icon-gm,
@@ -507,6 +525,8 @@ body.campaign-public-layout .title a {
   background-repeat: repeat;
 }
 #character-details,
+.character-index.campaign-public-layout .character-list-item,
+.character-index.campaign-public-layout .character-quick-search,
 .collapsable-nav-row .front-nav-container,
 .collapsable-nav-row .sidebar,
 .main-content-container #campaign-footer,
