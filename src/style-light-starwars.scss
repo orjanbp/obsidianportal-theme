@@ -1,0 +1,52 @@
+/**
+ * This is a themefile, applying a set of styles to be used
+ * when compiling a themed style from the available components.
+ * It then imports all partials afterwards, so that this single
+ * SCSS file can be compiled into a CSS file without needing to
+ * gather all SASS files during the build.
+ */ 
+
+:root {
+  --content-max-width: 1240px;
+  --content-padding: 0px;
+  --header-space-above: 30px;
+  --body-bg-color: #e0e0e0;
+  --background-image-height: 600px;
+  --background-image-position: center 30%;
+  --title-font-size: 2.5rem;
+
+  --content-bg-dark: #eeedeb;
+  --content-bg-light: #fffefc;
+  --content-bg-accent: #f8f7f7;
+
+  --text-color-big: #000000;
+  --text-color-body: #414141;
+  --bottom-line-color: #bdbdbd;
+
+  --sidebar-gradient-top: #FFF;
+  --sidebar-gradient-bottom: #FFF;
+  --sidebar-text-inactive: #414141;
+  --sidebar-text-active: #FFF;
+
+  --character-desc-bio-heading-display: none;
+
+  /* Light-mode specific vars */
+  --light-mode-icons: #959595;
+}
+
+@import './components/_partials.scss';
+
+/* Theme specific alterations can go below here */
+
+/**
+  Lighten big icons in this light theme
+**/
+.section-header.stream .section-header-icon,
+.op-icon-gm,
+.campaign-public-layout #campaign-nav li .icon {
+  color: var(--light-mode-icons);
+}
+.campaign-public-layout #campaign-nav li.active .icon,
+.campaign-public-layout #campaign-nav li:hover .icon {
+  color: var(--sidebar-text-active);
+}
