@@ -166,11 +166,6 @@ table tr:nth-of-type(2n) {
 .campaign-public-layout .highlight-container {
   height: 4px;
 }
-.campaign-public-layout .page-background {
-  position: absolute;
-  max-height: var(--background-image-height);
-  background-position: var(--background-image-position);
-}
 .campaign-public-layout .page-background::after {
   content: '';
   display: block;
@@ -189,6 +184,7 @@ table tr:nth-of-type(2n) {
   background-color: var(--body-bg-color);
 }
 .campaign-public-layout #content {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 45px);
@@ -200,6 +196,11 @@ table tr:nth-of-type(2n) {
 }
 .campaign-public-layout .collapsable-nav-row {
   flex-grow: 1;
+}
+.campaign-public-layout .page-background {
+  position: absolute;
+  max-height: var(--background-image-height);
+  background-position: var(--background-image-position);
 }
 .campaign-public-layout .collapsable-nav-row {
   display: flex;
@@ -486,4 +487,26 @@ body.campaign-public-layout .post-section {
 .campaign-public-layout #campaign-nav li.active .icon,
 .campaign-public-layout #campaign-nav li:hover .icon {
   color: var(--sidebar-text-active);
+}
+.campaign-public-layout .collapsable-nav-row {
+  background: url(https://i.imgur.com/7nYisv5.png);
+  background-size: 800px;
+  background-repeat: repeat;
+}
+.collapsable-nav-row .front-nav-container,
+.collapsable-nav-row .sidebar #character-details,
+.main-content-container #campaign-footer,
+.main-content-container .campaign-landing-page-container,
+.main-content-container .post-section {
+  box-shadow: 0 0 2px rgba(0,0,0,.15);
+}
+.adventure-log-new-container .adv-new {
+  border-radius: 0 6px;
+}
+#character-details,
+.campaign-landing-page-container,
+.wiki-page-container .post-main {
+  background-image: url(https://i.imgur.com/ehizlKB.png);
+  background-repeat: no-repeat;
+  background-position: right top 20px;
 }

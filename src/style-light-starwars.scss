@@ -50,3 +50,43 @@
 .campaign-public-layout #campaign-nav li:hover .icon {
   color: var(--sidebar-text-active);
 }
+
+/**
+  The page body background has a soft texture in this theme
+*/
+.campaign-public-layout .collapsable-nav-row {
+  background: url('https://i.imgur.com/7nYisv5.png');
+  background-size: 800px;
+  background-repeat: repeat;
+}
+
+/**
+  Soft box-shadow to complement the texture
+*/
+.main-content-container .campaign-landing-page-container,
+.main-content-container .post-section,
+.main-content-container #campaign-footer,
+.collapsable-nav-row .front-nav-container,
+.collapsable-nav-row .sidebar
+#character-details {
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.15);
+}
+
+/**
+  Make certain buttons and boxes use a 'shaved edges'
+  look, for that added scifi flair
+*/
+.adventure-log-new-container .adv-new {
+  border-radius: 0px 6px; 
+}
+
+/**
+  Add yellow bar accent in top-right corner of posts
+*/
+.campaign-landing-page-container,
+.wiki-page-container .post-main,
+#character-details {
+  background-image: url(https://i.imgur.com/ehizlKB.png);
+  background-repeat: no-repeat;
+  background-position: right top 20px;
+}

@@ -166,11 +166,6 @@ table tr:nth-of-type(2n) {
 .campaign-public-layout .highlight-container {
   height: 4px;
 }
-.campaign-public-layout .page-background {
-  position: absolute;
-  max-height: var(--background-image-height);
-  background-position: var(--background-image-position);
-}
 .campaign-public-layout .page-background::after {
   content: '';
   display: block;
@@ -189,6 +184,7 @@ table tr:nth-of-type(2n) {
   background-color: var(--body-bg-color);
 }
 .campaign-public-layout #content {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 45px);
@@ -200,6 +196,11 @@ table tr:nth-of-type(2n) {
 }
 .campaign-public-layout .collapsable-nav-row {
   flex-grow: 1;
+}
+.campaign-public-layout .page-background {
+  position: absolute;
+  max-height: var(--background-image-height);
+  background-position: var(--background-image-position);
 }
 .campaign-public-layout .collapsable-nav-row {
   display: flex;
