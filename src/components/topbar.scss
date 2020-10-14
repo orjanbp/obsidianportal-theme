@@ -33,15 +33,6 @@
 }
 
 /**
-  Reposition background and apply variables
-*/
-.campaign-public-layout .page-background {
-  position: absolute;
-  max-height: var(--background-image-height);
-  background-position: var(--background-image-position);
-}
-
-/**
   Add gradient to fade the background image into the
   background colour.
 */

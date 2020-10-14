@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Starting to experiment with theme-specific style extensions. 
 
+### Changed
+
+- Made the page body run to the end of the page, if it is too short (which most newly created and largely empty pages will be).
+
+- Made the background not disappear underneath the top navbar.
+
 ## [0.14.0] - 2020-10-13
 
 ### Added 

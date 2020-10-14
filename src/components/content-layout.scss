@@ -15,6 +15,7 @@
   background-color: var(--body-bg-color);
 }
 .campaign-public-layout #content {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 45px);
@@ -27,6 +28,18 @@
 .campaign-public-layout .collapsable-nav-row {
   flex-grow: 1;
 }
+
+/**
+  PAGE BACKGROUND
+  Handle the height and positioning of the background image. 
+*/
+.campaign-public-layout .page-background {
+
+  position: absolute;
+  max-height: var(--background-image-height);
+  background-position: var(--background-image-position);
+}
+
 
 /**
   The collapsable nav row contains three parts; the left-hand
