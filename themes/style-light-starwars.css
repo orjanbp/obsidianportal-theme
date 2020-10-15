@@ -11,7 +11,7 @@
   --content-bg-accent: #f8f7f7;
   --text-color-big: #681f17;
   --text-color-body: #414141;
-  --bottom-line-color: none;
+  --bottom-line-color: #edd69f;
   --sidebar-gradient-top: #FFF;
   --sidebar-gradient-bottom: #FFF;
   --sidebar-text-inactive: #414141;
@@ -27,7 +27,7 @@ p {
 }
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
-.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h3:not(.subtitle),
 .campaign-public-layout .main-content h4,
 .campaign-public-layout .main-content h5,
 .campaign-public-layout .main-content h6,
@@ -482,7 +482,7 @@ body.campaign-public-layout .post-section {
 }
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
-.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h3:not(.subtitle),
 .campaign-public-layout .main-content h4,
 .campaign-public-layout .main-content h5,
 .campaign-public-layout .main-content h6,
@@ -496,7 +496,7 @@ body.campaign-public-layout .title a {
 #gm-secrets .title,
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
-.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h3:not(.subtitle),
 .post-gm-only .gm-only-header.title,
 .post-gm-only .title,
 .secret-section .gm-only-header.title,

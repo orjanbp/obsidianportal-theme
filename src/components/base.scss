@@ -25,7 +25,7 @@ p {
 */
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
-.campaign-public-layout .main-content h3,
+.campaign-public-layout .main-content h3:not(.subtitle),
 .campaign-public-layout .main-content h4,
 .campaign-public-layout .main-content h5,
 .campaign-public-layout .main-content h6,
