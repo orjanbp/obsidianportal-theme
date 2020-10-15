@@ -9,19 +9,21 @@
   background: var(--content-bg-light);
   color: var(--text-color-body);
 }
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active,
+.adventure-log-index .post-date,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-light);
+}
+.adventure-log-index .adventure-log-new-container,
 .sidebar-adventure-log-neighbors .neighbor-post .post-column {
   background-color: var(--content-bg-accent);
 }
 .sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
   color: var(--text-color-body);
 }
-.adventure-log-index .adventure-log-new-container,
-.adventure-log-index-filter .filter-header,
-.adventure-log-index-filter ul .active,
-.adventure-log-index .post-date,
-.adventure-log-show .post-date {
-  background-color: var(--content-bg-accent);
-}
+
+
 
 /**
   Add padding so log doesn't hug corner sidebar edge.

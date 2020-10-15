@@ -11,6 +11,7 @@
   --content-bg-accent: #f7f7f7;
   --text-color-big: #000000;
   --text-color-body: #414141;
+  --text-color-soft: #757575;
   --bottom-line-color: #bdbdbd;
   --sidebar-gradient-top: #FFF;
   --sidebar-gradient-bottom: #FFF;
@@ -28,9 +29,9 @@ p {
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3:not(.subtitle),
-.campaign-public-layout .main-content h4,
-.campaign-public-layout .main-content h5,
-.campaign-public-layout .main-content h6,
+.campaign-public-layout .main-content h4:not(.subtitle),
+.campaign-public-layout .main-content h5:not(.subtitle),
+.campaign-public-layout .main-content h6:not(.subtitle),
 .character-index.campaign-public-layout .character-quick-search h4,
 .item-index.campaign-public-layout .character-quick-search h4,
 body.campaign-public-layout .title a {
@@ -42,6 +43,10 @@ body.campaign-public-layout .title a {
   margin-top: 4px;
   margin-bottom: 8px;
 }
+.adventure-log-index .day,
+.adventure-log-index .month-year,
+.adventure-log-show .day,
+.adventure-log-show .month-year,
 .op-icon-gm,
 .preview-content h2,
 .preview-content h3,
@@ -297,18 +302,18 @@ body.campaign-public-layout .post-section {
   background: var(--content-bg-light);
   color: var(--text-color-body);
 }
+.adventure-log-index .post-date,
+.adventure-log-index-filter .filter-header,
+.adventure-log-index-filter ul .active,
+.adventure-log-show .post-date {
+  background-color: var(--content-bg-light);
+}
+.adventure-log-index .adventure-log-new-container,
 .sidebar-adventure-log-neighbors .neighbor-post .post-column {
   background-color: var(--content-bg-accent);
 }
 .sidebar-adventure-log-neighbors .neighbor-post .adventure-log-post-title {
   color: var(--text-color-body);
-}
-.adventure-log-index .adventure-log-new-container,
-.adventure-log-index .post-date,
-.adventure-log-index-filter .filter-header,
-.adventure-log-index-filter ul .active,
-.adventure-log-show .post-date {
-  background-color: var(--content-bg-accent);
 }
 .sidebar-adventure-log-neighbors {
   padding-right: 16px;

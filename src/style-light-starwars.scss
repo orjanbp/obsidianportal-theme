@@ -21,6 +21,7 @@
 
   --text-color-big: #681f17;
   --text-color-body: #414141;
+  --text-color-soft: #757575;
   --bottom-line-color: #edd69f;
 
   --sidebar-gradient-top: #FFF;
@@ -44,9 +45,9 @@
 .campaign-public-layout .main-content h1,
 .campaign-public-layout .main-content h2,
 .campaign-public-layout .main-content h3:not(.subtitle),
-.campaign-public-layout .main-content h4,
-.campaign-public-layout .main-content h5,
-.campaign-public-layout .main-content h6,
+.campaign-public-layout .main-content h4:not(.subtitle),
+.campaign-public-layout .main-content h5:not(.subtitle),
+.campaign-public-layout .main-content h6:not(.subtitle),
 .character-index.campaign-public-layout .character-quick-search h4,
 .item-index.campaign-public-layout .character-quick-search h4,
 body.campaign-public-layout .title a {
@@ -110,14 +111,6 @@ body.campaign-public-layout .title a {
 .character-index.campaign-public-layout .character-quick-search,
 .character-index.campaign-public-layout .character-list-item {
   box-shadow: 0px 0px 2px rgba(0,0,0,0.15);
-}
-
-/**
-  Make certain buttons and boxes use a 'shaved edges'
-  look, for that added scifi flair
-*/
-.adventure-log-new-container .adv-new {
-  border-radius: 0px 6px; 
 }
 
 /**
