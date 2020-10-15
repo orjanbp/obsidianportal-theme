@@ -291,6 +291,7 @@ body.campaign-public-layout .post-section {
   padding: 16px 20px;
   background: var(--content-bg-light);
   margin-top: 16px;
+  margin-bottom: 0;
 }
 .main-content-container #campaign-footer .links {
   margin: 0;
