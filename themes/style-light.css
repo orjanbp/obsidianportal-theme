@@ -474,17 +474,11 @@ body.campaign-public-layout .post-section {
 .campaign-textarea-container .embed-buttons .button:nth-of-type(1) {
   margin-top: 27px;
 }
-.image-float-right {
+.image-float-right,
+.imgfloatr {
   float: right;
-  max-width: 460px;
-  padding: 0 0 16px 16px;
-}
-@media screen and (max-width:1040px) {
-  .image-float-right {
-    float: none;
-    max-width: 100%;
-    padding: 0;
-  }
+  max-width: 45%;
+  margin: 0 0 16px 16px;
 }
 .campaign-public-layout #campaign-nav li .icon,
 .op-icon-gm,
