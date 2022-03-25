@@ -12,6 +12,14 @@ This project contains custom CSS styling for Obsidian Portal campaigns. The styl
 
 - Dark theme version. 👻
 
+## Repo Status
+
+I am not currently actively maintaining this project, as I haven't been using Obsidian Portal for any personal TTRPG campaigns lately. Still it is here, I think I have some changes to it that I could publish at some point in the near future, some polish work ... 
+
+And if anyone have been doing the same and want to PR, the door is open. 👍
+
+But I have not been doing any active new work on it for about a year (as of writing this readme change). If you use it and like it, I am really happy to hear! If Obsidian Portal does some changes and this breaks, I am sorry for that; send me a message and let me see what I can do.
+
 ## Available Themes
 
 All available themes are available under the `themes` directory in this repository.
@@ -24,7 +32,7 @@ At the top of each `style-[name].css` file located under `themes`, there is a li
 
 ```css
 :root {
-   --content-max-width: 1240px;
+  --content-max-width: 1240px;
   --content-padding: 0px;
   --header-space-above: 30px;
   --body-bg-color: #19191b;
